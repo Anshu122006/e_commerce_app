@@ -1,0 +1,3 @@
+class CApiConstants {
+  CApiConstants._();
+}
