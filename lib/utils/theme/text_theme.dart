@@ -5,7 +5,7 @@ class CTextTheme {
 
   static TextTheme lightTextTheme = TextTheme(
     headlineLarge: TextStyle().copyWith(
-      fontSize: 32,
+      fontSize: 30,
       color: Colors.black,
       fontWeight: FontWeight.w900,
     ),

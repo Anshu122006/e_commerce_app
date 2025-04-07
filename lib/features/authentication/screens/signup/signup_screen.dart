@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/dividers/text_divider.dart';
+import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
 import 'package:e_commerce_app/features/authentication/screens/signup/verify_email.dart';
 import 'package:e_commerce_app/features/authentication/screens/signup/widgets/checkbox.dart';
 import 'package:e_commerce_app/features/authentication/screens/signup/widgets/footer.dart';

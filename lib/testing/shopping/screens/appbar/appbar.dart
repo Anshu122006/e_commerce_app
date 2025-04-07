@@ -4,8 +4,8 @@ import 'package:e_commerce_app/testing/shopping/screens/appbar/deliver_to.dart';
 import 'package:e_commerce_app/testing/shopping/screens/appbar/top_part.dart';
 import 'package:flutter/material.dart';
 
-class CAppBar extends StatefulWidget {
-  const CAppBar({
+class CTestAppBar extends StatefulWidget {
+  const CTestAppBar({
     super.key,
     this.title,
     this.height = 200,
@@ -31,10 +31,10 @@ class CAppBar extends StatefulWidget {
   final String? helperText;
 
   @override
-  State<CAppBar> createState() => _CAppBarState();
+  State<CTestAppBar> createState() => _CTestAppBarState();
 }
 
-class _CAppBarState extends State<CAppBar> {
+class _CTestAppBarState extends State<CTestAppBar> {
   @override
   Widget build(BuildContext context) {
     return CBackground(

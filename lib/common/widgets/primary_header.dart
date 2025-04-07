@@ -1,6 +1,5 @@
 import 'package:e_commerce_app/common/decoration/edges/bottom_inward_curved.dart';
 import 'package:e_commerce_app/common/decoration/shapes/circle.dart';
-import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 class CPrimaryHeader extends StatelessWidget {
@@ -14,10 +13,8 @@ class CPrimaryHeader extends StatelessWidget {
     return ClipPath(
       clipper: CBottomInwardCurvedEdge(),
       child: Container(
-        width: double.infinity,
-        height: CDeviceHelper.getScreenHeight(context) * 0.50,
         color: backgroundColor ?? Theme.of(context).primaryColor,
-        padding: EdgeInsets.all(0),
+        padding: EdgeInsets.only(bottom: 24),
         child: Stack(
           children: [
             Positioned(top: -100, right: -170, child: CCircle(opacity: 0.15)),

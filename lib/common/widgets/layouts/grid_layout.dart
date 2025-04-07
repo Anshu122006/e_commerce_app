@@ -5,14 +5,18 @@ class CGridLayout extends StatelessWidget {
     super.key,
     required this.itemCount,
     required this.builder,
+    this.shrinkWrap = true,
+    this.isScrollable = false,
     this.crossAxisCount = 2,
     this.mainAxisSpacing = 20,
     this.crossAxisSpacing = 20,
-    this.mainAxisExtent = 270,
+    this.mainAxisExtent = 290,
   });
 
   final int itemCount;
   final int crossAxisCount;
+  final bool shrinkWrap;
+  final bool isScrollable;
   final Widget? Function(BuildContext, int) builder;
   final double mainAxisSpacing;
   final double crossAxisSpacing;
@@ -20,20 +24,17 @@ class CGridLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: GridView.builder(
-        itemCount: itemCount,
-        padding: EdgeInsets.zero,
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCount,
-          mainAxisSpacing: mainAxisSpacing,
-          crossAxisSpacing: crossAxisSpacing,
-          mainAxisExtent: mainAxisExtent,
-        ),
-        itemBuilder: builder,
+    return GridView.builder(
+      itemCount: itemCount,
+      shrinkWrap: shrinkWrap,
+      physics: isScrollable ? null : NeverScrollableScrollPhysics(),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: crossAxisCount,
+        mainAxisSpacing: mainAxisSpacing,
+        crossAxisSpacing: crossAxisSpacing,
+        mainAxisExtent: mainAxisExtent,
       ),
+      itemBuilder: builder,
     );
   }
 }

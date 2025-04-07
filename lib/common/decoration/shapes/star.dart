@@ -9,14 +9,12 @@ class CStar extends StatelessWidget {
     this.angle = 0,
     this.color = Colors.white,
     this.border,
-    this.child,
   });
   final double radius;
   final double opacity;
   final double angle;
   final Color color;
   final BoxBorder? border;
-  final Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +26,6 @@ class CStar extends StatelessWidget {
           height: radius * 2,
           width: radius * 2,
           decoration: BoxDecoration(border: border, color: color),
-          child: child,
         ),
       ),
     );

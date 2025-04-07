@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/common/widgets/appbar.dart';
+import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/common/widgets/buttons/cart_button.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/header/appbar/title.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/head/appbar/title.dart';
 import 'package:flutter/material.dart';
 
 class HomePageAppBar extends StatelessWidget {

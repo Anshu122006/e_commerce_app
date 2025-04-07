@@ -1,31 +1,33 @@
 import 'package:e_commerce_app/common/decoration/styles/shadow.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/body/grid_elements/parts/add_button.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/body/grid_elements/parts/discount_label.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/body/grid_elements/parts/fav_button.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/body/grid_elements/parts/product_desc.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/body/grid_elements/parts/product_image.dart';
+import 'package:e_commerce_app/common/widgets/cards/parts/add_button.dart';
+import 'package:e_commerce_app/common/widgets/cards/parts/discount_label.dart';
+import 'package:e_commerce_app/common/widgets/cards/parts/fav_button.dart';
+import 'package:e_commerce_app/common/widgets/cards/parts/product_desc.dart';
+import 'package:e_commerce_app/common/widgets/cards/parts/product_image.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
-class CVerticalItem extends StatelessWidget {
-  const CVerticalItem({super.key, this.width, required this.id});
+class CVerticalImageCard extends StatelessWidget {
+  const CVerticalImageCard({super.key, this.width = 200, required this.id});
 
-  final double? width;
+  final double width;
   final int id;
 
   @override
   Widget build(BuildContext context) {
     final bool isDark = CDeviceHelper.isDarkMode(context);
+
     return GestureDetector(
       onTap: () {},
       child: SizedBox(
+        // width: width,
+        // height: width * 2,
         child: Stack(
           children: [
             Padding(
               padding: const EdgeInsets.all(3),
               child: Container(
-                width: width,
                 decoration: BoxDecoration(
                   boxShadow: [
                     isDark ? CShadows.mildShadowDark : CShadows.mildShadowLight,

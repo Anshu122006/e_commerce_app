@@ -12,7 +12,7 @@ class CShadows {
   static final mildShadowDark = BoxShadow(
     blurRadius: 6,
     spreadRadius: 3,
-    color: Colors.grey.shade800.withAlpha(60),
+    color: Colors.grey.shade500.withAlpha(60),
     offset: Offset(0, 0),
     blurStyle: BlurStyle.normal,
   );

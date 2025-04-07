@@ -7,14 +7,14 @@ class CRoundedRect extends StatelessWidget {
     this.width = 45,
     this.radius = 4,
     this.sclae = 1,
-    this.color,
+    this.color = Colors.white,
   });
 
   final double height;
   final double width;
   final double radius;
   final double sclae;
-  final Color? color;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class CRoundedRect extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 3, vertical: 3),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(radius),
-          color: color ?? Colors.grey.shade300,
+          color: color,
         ),
       ),
     );

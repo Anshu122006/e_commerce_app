@@ -1,7 +1,7 @@
+import 'package:e_commerce_app/testing/shopping/screens/appbar/appbar.dart';
 import 'package:e_commerce_app/testing/shopping/screens/horizontal_scroll/category_list/categories.dart';
 import 'package:e_commerce_app/testing/shopping/screens/horizontal_scroll/category_list/data_model.dart';
 import 'package:e_commerce_app/testing/shopping/screens/horizontal_scroll/types_list/types_list.dart';
-import 'package:e_commerce_app/testing/shopping/screens/appbar/appbar.dart';
 import 'package:flutter/material.dart';
 
 class Test extends StatefulWidget {
@@ -76,7 +76,7 @@ class _TestState extends State<Test> {
     return Scaffold(
       body: Column(
         children: [
-          CAppBar(
+          CTestAppBar(
             showBackArrow: false,
             leadingImage: Image.asset("assets/images/icons/dn_icon.png"),
             adress: "IITI, India",

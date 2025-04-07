@@ -4,6 +4,7 @@ import 'package:e_commerce_app/utils/theme/checkbox_theme.dart';
 import 'package:e_commerce_app/utils/theme/elevated_button_theme.dart';
 import 'package:e_commerce_app/utils/theme/input_decoration_theme.dart';
 import 'package:e_commerce_app/utils/theme/outlined_button_theme.dart';
+import 'package:e_commerce_app/utils/theme/tabbar_theme.dart';
 import 'package:e_commerce_app/utils/theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -23,6 +24,7 @@ class CAppTheme {
     outlinedButtonTheme: COutlinedButtonTheme.lightOutlinedButtonThemeData,
     inputDecorationTheme: CInputDecorationTheme.lightInputDecorationTheme,
     bottomSheetTheme: CBottomSheetTheme.lightBottomSheetThemeData,
+    tabBarTheme: CTabbarTheme.lightTabbarTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -38,5 +40,6 @@ class CAppTheme {
     outlinedButtonTheme: COutlinedButtonTheme.darkOutlinedButtonThemeData,
     inputDecorationTheme: CInputDecorationTheme.darkInputDecorationTheme,
     bottomSheetTheme: CBottomSheetTheme.darkBottomSheetThemeData,
+    tabBarTheme: CTabbarTheme.darkTabbarTheme,
   );
 }

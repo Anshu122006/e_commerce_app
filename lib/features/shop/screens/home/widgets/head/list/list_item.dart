@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/decoration/shapes/circle.dart';
+import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
@@ -15,12 +15,14 @@ class CListItem extends StatelessWidget {
         children: [
           Expanded(
             flex: 2,
-            child: CCircle(
-              opacity: 1,
-              color: Colors.white,
-              child: Image(
-                image: AssetImage(CImages.logo),
-                fit: BoxFit.contain,
+            child: FittedBox(
+              child: CRoundedImage(
+                padding: EdgeInsets.all(2),
+                isCircle: true,
+                backgroundColor:
+                    isDark ? Colors.grey.shade900 : Colors.grey.shade50,
+                image: CImages.clothIcon,
+                overlayColor: isDark ? Colors.white : Colors.black,
               ),
             ),
           ),

@@ -1,5 +1,7 @@
-import 'package:e_commerce_app/common/texts/brand_name.dart';
+import 'package:e_commerce_app/common/widgets/rounded_container.dart';
+import 'package:e_commerce_app/common/widgets/texts/brand_name.dart';
 import 'package:flutter/material.dart';
+
 class CProductDesc extends StatelessWidget {
   const CProductDesc({
     super.key,
@@ -14,10 +16,10 @@ class CProductDesc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
+    return CRoundedContainer(
       padding: EdgeInsets.only(left: 10, bottom: 14),
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+      radius: 20,
+      showBorder: false,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -28,14 +30,11 @@ class CProductDesc extends StatelessWidget {
           ),
           CBrandName(brandName: brandName),
           // Spacer(flex: 1),
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Text(
-              "\$$price",
-              style: Theme.of(context).textTheme.headlineLarge!.apply(
-                fontFamily: "Pacifico",
-              ),
-            ),
+          Text(
+            "\$$price",
+            style: Theme.of(
+              context,
+            ).textTheme.headlineLarge!.apply(fontFamily: "Pacifico"),
           ),
         ],
       ),

@@ -7,13 +7,11 @@ class CCircle extends StatelessWidget {
     this.opacity = 1,
     this.color = Colors.white,
     this.border,
-    this.child,
   });
   final double radius;
   final double opacity;
   final Color color;
   final BoxBorder? border;
-  final Widget? child;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +23,6 @@ class CCircle extends StatelessWidget {
         borderRadius: BorderRadius.circular(radius),
         color: color,
       ),
-      child: child,
     );
 
     return Opacity(

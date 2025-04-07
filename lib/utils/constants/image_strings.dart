@@ -26,6 +26,7 @@ class CImages {
   static const String stationeryIcon = 'assets/icons/stationery_icon.png';
   static const String foodIcon = 'assets/icons/food_icon.png';
   static const String groomingIcon = 'assets/icons/grooming_icon.png';
+  static const String profileIcon = 'assets/icons/profile_icon.png';
 
   static const String verifyEmail = 'assets/images/animations/verify_email.gif';
   static const String success = 'assets/images/animations/success.gif';

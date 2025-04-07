@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/images/rounded_image.dart';
+import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -11,14 +11,11 @@ class CProductImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isDark = CDeviceHelper.isDarkMode(context);
-    return Container(
-      width: double.infinity,
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        color: isDark ? Colors.grey.shade800 : Colors.grey.shade50,
-        borderRadius: BorderRadius.circular(18),
-      ),
-      child: CRoundedImage(image: image, fit: BoxFit.scaleDown),
+    return CRoundedImage(
+      padding: EdgeInsets.all(6),
+      backgroundColor: isDark ? Colors.grey.shade900 : Colors.grey.shade50,
+      image: image,
+      fit: BoxFit.scaleDown,
     );
   }
 }

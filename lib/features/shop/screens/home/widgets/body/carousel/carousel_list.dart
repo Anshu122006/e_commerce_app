@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commerce_app/common/decoration/shapes/rounded_rect.dart';
-import 'package:e_commerce_app/common/images/rounded_image.dart';
+import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/features/shop/controller/home_carousel_controller.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
@@ -13,14 +13,14 @@ class CCarouselList extends StatelessWidget {
   Widget build(BuildContext context) {
     final HomeCaroucelController controller = Get.put(HomeCaroucelController());
     final List<Widget> imageList = [
-      CRoundedImage(image: CImages.promo1),
-      CRoundedImage(image: CImages.promo2),
-      CRoundedImage(image: CImages.promo3),
+      CRoundedImage(width: double.infinity, image: CImages.promo1),
+      CRoundedImage(width: double.infinity, image: CImages.promo2),
+      CRoundedImage(width: double.infinity, image: CImages.promo3),
       // CRoundedImage(image: CImages.promo4),
     ];
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 22),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
       child: Column(
         children: [
           Obx(() {
@@ -30,6 +30,7 @@ class CCarouselList extends StatelessWidget {
             return CarouselSlider(
               options: CarouselOptions(
                 viewportFraction: 1,
+                height: 240,
                 onPageChanged:
                     (index, reason) => controller.setSelectedIndex(index),
               ),
@@ -47,7 +48,7 @@ class CCarouselList extends StatelessWidget {
                       ? CRoundedRect(color: Colors.grey.shade600, sclae: 1.1)
                       : GestureDetector(
                         onTap: () => controller.setPage(i),
-                        child: CRoundedRect(),
+                        child: CRoundedRect(color: Colors.grey.shade400),
                       ),
               ],
             ),
