@@ -3,10 +3,7 @@ import 'package:logger/logger.dart';
 class CLoggerHelper {
   CLoggerHelper._();
 
-  static final Logger _logger = Logger(
-    printer: PrettyPrinter(),
-    level: Level.debug,
-  );
+  static final Logger _logger = Logger(printer: PrettyPrinter(), level: Level.debug);
 
   static void debug(String message) {
     _logger.d(message);

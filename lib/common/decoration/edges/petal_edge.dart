@@ -17,18 +17,8 @@ class CPetalEdge extends CustomClipper<Path> {
     ];
 
     path.moveTo(points[0].dx, points[0].dy);
-    path.quadraticBezierTo(
-      points[1].dx,
-      points[1].dy,
-      points[2].dx,
-      points[2].dy,
-    );
-    path.quadraticBezierTo(
-      points[3].dx,
-      points[3].dy,
-      points[4].dx,
-      points[4].dy,
-    );
+    path.quadraticBezierTo(points[1].dx, points[1].dy, points[2].dx, points[2].dy);
+    path.quadraticBezierTo(points[3].dx, points[3].dy, points[4].dx, points[4].dy);
 
     // for (int i = 1; i < points.length; i++) {
     //   path.lineTo(points[i].dx, points[i].dy);

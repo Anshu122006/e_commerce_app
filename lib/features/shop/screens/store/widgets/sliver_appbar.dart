@@ -16,8 +16,7 @@ class CStoreAppbar extends StatelessWidget {
       automaticallyImplyLeading: false,
       pinned: true,
       floating: true,
-      backgroundColor:
-          CDeviceHelper.isDarkMode(context) ? Colors.black : Colors.white,
+      backgroundColor: CDeviceHelper.isDarkMode(context) ? Colors.black : Colors.white,
       expandedHeight: 420,
       flexibleSpace: Padding(
         padding: const EdgeInsets.all(12),
@@ -30,22 +29,14 @@ class CStoreAppbar extends StatelessWidget {
             const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: CHeading(
-                title: "Featured brands",
-                buttonText: "View all",
-                onPressed: () {},
-              ),
+              child: CHeading(title: "Featured brands", buttonText: "View all", onPressed: () {}),
             ),
             const SizedBox(height: 20),
             CGridLayout(
               itemCount: 4,
               mainAxisExtent: 70,
               builder: (_, index) {
-                return CBrandCard(
-                  brandName: "Nike",
-                  image: CImages.shoeIcon,
-                  count: 356,
-                );
+                return CBrandCard(brandName: "Nike", image: CImages.shoeIcon, count: 356);
               },
             ),
           ],

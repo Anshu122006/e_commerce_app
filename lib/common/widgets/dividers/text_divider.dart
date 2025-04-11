@@ -2,13 +2,17 @@ import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 class CTextDivider extends StatelessWidget {
-  const CTextDivider({super.key, required this.text});
+  const CTextDivider({super.key, this.text});
 
-  final String text;
+  final String? text;
 
   @override
   Widget build(BuildContext context) {
     final bool isDark = CDeviceHelper.isDarkMode(context);
+
+    // if(text != null){
+    //   Widget divider =
+    // }
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
@@ -19,19 +23,19 @@ class CTextDivider extends StatelessWidget {
             children: [
               Expanded(
                 child: Divider(
-                  color: isDark ? Colors.grey : Colors.grey.shade400,
+                  color: isDark ? Colors.grey : Colors.grey.shade700,
                   thickness: 0.5,
-                  indent: 30,
-                  endIndent: 10,
+                  indent: text != null ? 20 : 0,
+                  endIndent: text != null ? 10 : 0,
                 ),
               ),
-              Text(text, style: Theme.of(context).textTheme.bodySmall),
+              Text(text ?? "", style: Theme.of(context).textTheme.bodySmall),
               Expanded(
                 child: Divider(
-                  color: isDark ? Colors.grey : Colors.grey.shade400,
+                  color: isDark ? Colors.grey : Colors.grey.shade700,
                   thickness: 0.5,
-                  indent: 10,
-                  endIndent: 30,
+                  indent: text != null ? 10 : 0,
+                  endIndent: text != null ? 20 : 0,
                 ),
               ),
             ],

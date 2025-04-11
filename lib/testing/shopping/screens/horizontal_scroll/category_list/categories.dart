@@ -44,10 +44,7 @@ class _CCategoryListState extends State<CCategoryList> {
       color: Colors.transparent,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: _getItemList(),
-        ),
+        child: Row(mainAxisAlignment: MainAxisAlignment.start, children: _getItemList()),
       ),
     );
   }

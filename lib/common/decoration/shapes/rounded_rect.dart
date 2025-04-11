@@ -24,10 +24,7 @@ class CRoundedRect extends StatelessWidget {
         height: height,
         width: width,
         margin: EdgeInsets.symmetric(horizontal: 3, vertical: 3),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(radius),
-          color: color,
-        ),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(radius), color: color),
       ),
     );
   }

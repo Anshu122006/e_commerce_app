@@ -38,17 +38,9 @@ class CSignupForm extends StatelessWidget {
             filled: false,
           ),
           const SizedBox(height: CDimensions.inboxDistance),
-          CFormInputField(
-            prefixIcon: Icons.email_outlined,
-            labelText: CTexts.email,
-            filled: false,
-          ),
+          CFormInputField(prefixIcon: Icons.email_outlined, labelText: CTexts.email, filled: false),
           const SizedBox(height: CDimensions.inboxDistance),
-          CFormInputField(
-            prefixIcon: Icons.phone,
-            labelText: CTexts.phone,
-            filled: false,
-          ),
+          CFormInputField(prefixIcon: Icons.phone, labelText: CTexts.phone, filled: false),
           const SizedBox(height: CDimensions.inboxDistance),
           CFormInputField(
             prefixIcon: Icons.password,

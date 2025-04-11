@@ -25,7 +25,7 @@ class CHeading extends StatelessWidget {
         children: [
           Text(
             title,
-            style: Theme.of(context).textTheme.headlineMedium!.apply(
+            style: Theme.of(context).textTheme.headlineSmall!.apply(
               color: color,
               fontFamily: family,
               letterSpacingFactor: 1.5,

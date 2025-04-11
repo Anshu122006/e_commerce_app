@@ -13,9 +13,7 @@ class CDeviceHelper {
   }
 
   static void setStatusbarColor(BuildContext context, Color color) {
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(statusBarColor: color),
-    );
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: color));
   }
 
   static bool isLandscapeOriented(BuildContext context) {
@@ -66,9 +64,7 @@ class CDeviceHelper {
     Future.delayed(Duration(seconds: 0), () => HapticFeedback.vibrate());
   }
 
-  static Future<void> setPreferredOrientations(
-    List<DeviceOrientation> orientations,
-  ) async {
+  static Future<void> setPreferredOrientations(List<DeviceOrientation> orientations) async {
     await SystemChrome.setPreferredOrientations(orientations);
   }
 
@@ -77,10 +73,7 @@ class CDeviceHelper {
   }
 
   static void showStatusBar() {
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
   }
 
   // static double getAppBarHeight() {

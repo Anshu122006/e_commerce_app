@@ -38,6 +38,7 @@ class CRoundedImage extends StatelessWidget {
       child: CRoundedContainer(
         height: height,
         width: width,
+        radius: radius,
         showBorder: showBorder,
         backgroundColor: backgroundColor,
         borderColor: borderColor,

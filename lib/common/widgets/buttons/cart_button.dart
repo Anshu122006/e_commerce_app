@@ -16,10 +16,7 @@ class CCartButton extends StatelessWidget {
             icon: Icon(
               Icons.shopping_cart_outlined,
               size: 28,
-              color:
-                  CDeviceHelper.isDarkMode(context)
-                      ? Colors.white
-                      : Colors.grey.shade800,
+              color: CDeviceHelper.isDarkMode(context) ? Colors.white : Colors.grey.shade800,
             ),
           ),
           Positioned(
@@ -32,11 +29,7 @@ class CCartButton extends StatelessWidget {
               child: Center(
                 child: Text(
                   "1",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
                 ),
               ),
             ),

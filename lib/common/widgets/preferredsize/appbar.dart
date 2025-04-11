@@ -25,10 +25,7 @@ class CAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     Color? iconTheme =
-        iconColor ??
-        (CDeviceHelper.isDarkMode(context)
-            ? Colors.white
-            : Colors.grey.shade800);
+        iconColor ?? (CDeviceHelper.isDarkMode(context) ? Colors.white : Colors.grey.shade800);
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
       child: AppBar(
@@ -37,10 +34,7 @@ class CAppBar extends StatelessWidget implements PreferredSizeWidget {
         title: title,
         leading:
             (leadingIcon != null)
-                ? IconButton(
-                  onPressed: leadingOnPressed,
-                  icon: Icon(leadingIcon, color: iconTheme),
-                )
+                ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon, color: iconTheme))
                 : showBackArrow
                 ? IconButton(
                   onPressed: () => Get.back(),

@@ -9,16 +9,20 @@ class CBrandCard extends StatelessWidget {
     super.key,
     required this.brandName,
     required this.image,
+    this.count = 0,
+    this.scale = 1,
     this.isVerified = true,
     this.showBorder = true,
-    required this.count,
+    this.showCount = true,
   });
 
   final String brandName;
   final String image;
+  final double scale;
+  final int count;
   final bool isVerified;
   final bool showBorder;
-  final int count;
+  final bool showCount;
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +34,9 @@ class CBrandCard extends StatelessWidget {
           children: [
             Flexible(
               child: CRoundedImage(
-                height: 52,
-                width: 52,
+                height: 52 * scale,
+                width: 52 * scale,
+                radius: 12 * scale,
                 image: image,
                 overlayColor:
                     CDeviceHelper.isDarkMode(context)
@@ -39,18 +44,23 @@ class CBrandCard extends StatelessWidget {
                         : Colors.black,
               ),
             ),
+
+            const SizedBox(width: 3),
+
             Flexible(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CBrandName(brandName: brandName),
-                  Text(
-                    "$count products",
-                    style: Theme.of(context).textTheme.bodySmall,
-                    overflow: TextOverflow.ellipsis,
-                  ),
+                  CBrandName(brandName: brandName, isVerified: isVerified),
+                  showCount
+                      ? Text(
+                        "$count products",
+                        style: Theme.of(context).textTheme.bodySmall,
+                        overflow: TextOverflow.ellipsis,
+                      )
+                      : SizedBox(width: 0, height: 0),
                 ],
               ),
             ),

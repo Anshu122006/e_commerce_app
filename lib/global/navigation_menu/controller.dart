@@ -7,12 +7,7 @@ import 'package:get/get.dart';
 
 class NavigationMenuController extends GetxController {
   Rx<int> selectedIndex = 0.obs;
-  List<Widget> screens = [
-    HomeScreen(),
-    StoreScreen(),
-    WishlistScreen(),
-    AccountScreen(),
-  ];
+  List<Widget> screens = [HomeScreen(), StoreScreen(), WishlistScreen(), AccountScreen()];
 
   void setCurrentPage(int index) {
     selectedIndex.value = index;

@@ -2,12 +2,7 @@ import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 class CTabBar extends StatelessWidget implements PreferredSizeWidget {
-  const CTabBar({
-    super.key,
-    required this.tabs,
-    this.isScrollable = true,
-    this.color,
-  });
+  const CTabBar({super.key, required this.tabs, this.isScrollable = true, this.color});
 
   final List<Tab> tabs;
   final bool isScrollable;

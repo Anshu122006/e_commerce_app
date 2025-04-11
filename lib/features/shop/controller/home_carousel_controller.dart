@@ -4,8 +4,7 @@ import 'package:get/get.dart';
 class HomeCaroucelController extends GetxController {
   static HomeCaroucelController get instance => Get.find();
 
-  CarouselSliderController carouselController =
-      CarouselSliderController();
+  CarouselSliderController carouselController = CarouselSliderController();
 
   Rx<int> selectedIndex = 0.obs;
 

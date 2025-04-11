@@ -7,9 +7,7 @@ class CTabbarTheme {
     unselectedLabelColor: Colors.grey.shade600,
     labelStyle: TextStyle(fontWeight: FontWeight.w600),
     unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
-    indicator: UnderlineTabIndicator(
-      borderSide: BorderSide(width: 3, color: Colors.pinkAccent),
-    ),
+    indicator: UnderlineTabIndicator(borderSide: BorderSide(width: 3, color: Colors.pinkAccent)),
     tabAlignment: TabAlignment.start,
     dividerColor: Colors.grey.shade700,
   );
@@ -19,9 +17,7 @@ class CTabbarTheme {
     unselectedLabelColor: Colors.grey.shade500,
     labelStyle: TextStyle(fontWeight: FontWeight.w600),
     unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
-    indicator: UnderlineTabIndicator(
-      borderSide: BorderSide(width: 3, color: Colors.pinkAccent),
-    ),
+    indicator: UnderlineTabIndicator(borderSide: BorderSide(width: 3, color: Colors.pinkAccent)),
     tabAlignment: TabAlignment.start,
     dividerColor: Colors.grey.shade500,
   );

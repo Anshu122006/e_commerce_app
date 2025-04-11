@@ -13,22 +13,13 @@ class CFormCheckBox extends StatelessWidget {
       children: [
         Row(
           children: [
-            Transform.scale(
-              scale: 1.2,
-              child: Checkbox(value: true, onChanged: (isChecked) {}),
-            ),
-            Text(
-              CTexts.rememberMe,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
+            Transform.scale(scale: 1.2, child: Checkbox(value: true, onChanged: (isChecked) {})),
+            Text(CTexts.rememberMe, style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
         TextButton(
           onPressed: () => Get.to(ForgotPassword()),
-          child: Text(
-            CTexts.forgotPassword,
-            style: Theme.of(context).textTheme.bodySmall,
-          ),
+          child: Text(CTexts.forgotPassword, style: Theme.of(context).textTheme.bodySmall),
         ),
       ],
     );

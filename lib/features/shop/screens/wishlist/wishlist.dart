@@ -12,19 +12,13 @@ class WishlistScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CAppBar(
-        title: Text(
-          "Wishlist",
-          style: Theme.of(context).textTheme.headlineLarge,
-        ),
+        title: Text("Wishlist", style: Theme.of(context).textTheme.headlineLarge),
         actions: [
           IconButton(
             onPressed: () {},
             icon: Icon(
               Iconsax.add,
-              color:
-                  CDeviceHelper.isDarkMode(context)
-                      ? Colors.white
-                      : Colors.black,
+              color: CDeviceHelper.isDarkMode(context) ? Colors.white : Colors.black,
             ),
           ),
         ],

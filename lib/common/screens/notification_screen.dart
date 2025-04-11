@@ -39,9 +39,7 @@ class CNotificationScreen extends StatelessWidget {
                 onPressed: onClick ?? () {},
                 child: Text(
                   buttonText!,
-                  style: TextStyle(
-                    color: isDark ? Colors.white : Colors.grey.shade800,
-                  ),
+                  style: TextStyle(color: isDark ? Colors.white : Colors.grey.shade800),
                 ),
               ),
             )
@@ -62,23 +60,12 @@ class CNotificationScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               animationImage,
-              Text(
-                title ?? '',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              Text(
-                subtitle ?? '',
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall,
-              ),
+              Text(title ?? '', style: Theme.of(context).textTheme.headlineMedium),
+              Text(subtitle ?? '', style: Theme.of(context).textTheme.bodySmall),
               SizedBox(height: 40),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: onContinue,
-                  child: Text(CTexts.continueText),
-                ),
+                child: ElevatedButton(onPressed: onContinue, child: Text(CTexts.continueText)),
               ),
               SizedBox(height: CDimensions.betweenItems),
               button,

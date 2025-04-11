@@ -99,17 +99,17 @@ class CTextTheme {
 
     bodyLarge: TextStyle().copyWith(
       fontSize: 22,
-      color: Colors.white,
-      fontWeight: FontWeight.w300,
+      color: Colors.black,
+      fontWeight: FontWeight.w100,
     ),
     bodyMedium: TextStyle().copyWith(
-      fontSize: 18,
-      color: Colors.white,
+      fontSize: 16,
+      color: Colors.grey.shade200,
       fontWeight: FontWeight.w300,
     ),
     bodySmall: TextStyle().copyWith(
       fontSize: 14,
-      color: Colors.white,
+      color: Colors.grey.shade200,
       fontWeight: FontWeight.w300,
     ),
 

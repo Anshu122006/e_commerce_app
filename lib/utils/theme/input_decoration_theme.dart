@@ -21,10 +21,7 @@ class CInputDecorationTheme {
       borderRadius: BorderRadius.circular(12),
       borderSide: BorderSide(color: Colors.pink.shade500, width: 2),
     ),
-    hintStyle: TextStyle(
-      color: Colors.pink.shade500,
-      fontStyle: FontStyle.italic,
-    ),
+    hintStyle: TextStyle(color: Colors.pink.shade500, fontStyle: FontStyle.italic),
     labelStyle: TextStyle(
       color: Colors.grey,
       fontWeight: FontWeight.w300,
@@ -57,10 +54,7 @@ class CInputDecorationTheme {
       borderRadius: BorderRadius.circular(12),
       borderSide: BorderSide(color: Colors.pink.shade500, width: 2),
     ),
-    hintStyle: TextStyle(
-      color: Colors.pink.shade500,
-      fontStyle: FontStyle.italic,
-    ),
+    hintStyle: TextStyle(color: Colors.pink.shade500, fontStyle: FontStyle.italic),
     labelStyle: TextStyle(
       color: Colors.grey,
       fontWeight: FontWeight.w300,

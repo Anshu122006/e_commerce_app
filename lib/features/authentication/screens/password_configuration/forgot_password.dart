@@ -18,9 +18,7 @@ class ForgotPassword extends StatelessWidget {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         elevation: 0,
         scrolledUnderElevation: 0,
-        actions: [
-          IconButton(onPressed: () => Get.back(), icon: Icon(Icons.close)),
-        ],
+        actions: [IconButton(onPressed: () => Get.back(), icon: Icon(Icons.close))],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
@@ -28,14 +26,8 @@ class ForgotPassword extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                CTexts.forgotPasswordTitle,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              Text(
-                CTexts.forgotPasswordSubtitle,
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
+              Text(CTexts.forgotPasswordTitle, style: Theme.of(context).textTheme.headlineMedium),
+              Text(CTexts.forgotPasswordSubtitle, style: Theme.of(context).textTheme.bodySmall),
               SizedBox(height: 30),
               SizedBox(
                 width: double.infinity,
@@ -60,9 +52,7 @@ class ForgotPassword extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     CTexts.resendEmail,
-                    style: TextStyle(
-                      color: isDark ? Colors.white : Colors.grey.shade700,
-                    ),
+                    style: TextStyle(color: isDark ? Colors.white : Colors.grey.shade700),
                   ),
                 ),
               ),

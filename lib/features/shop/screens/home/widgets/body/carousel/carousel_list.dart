@@ -31,8 +31,7 @@ class CCarouselList extends StatelessWidget {
               options: CarouselOptions(
                 viewportFraction: 1,
                 height: 240,
-                onPageChanged:
-                    (index, reason) => controller.setSelectedIndex(index),
+                onPageChanged: (index, reason) => controller.setSelectedIndex(index),
               ),
               carouselController: controller.carouselController,
               items: imageList,

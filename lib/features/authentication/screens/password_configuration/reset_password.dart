@@ -18,9 +18,7 @@ class ResetPassword extends StatelessWidget {
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         scrolledUnderElevation: 0,
-        actions: [
-          IconButton(onPressed: () => Get.back(), icon: Icon(Icons.close)),
-        ],
+        actions: [IconButton(onPressed: () => Get.back(), icon: Icon(Icons.close))],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -33,14 +31,8 @@ class ResetPassword extends StatelessWidget {
                 width: CDeviceHelper.getScreenWidth(context) * 0.8,
                 height: CDeviceHelper.getScreenHeight(context) * 0.4,
               ),
-              Text(
-                CTexts.resetPasswordTitle,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-              Text(
-                "newuser1823@gmail.com",
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
+              Text(CTexts.resetPasswordTitle, style: Theme.of(context).textTheme.headlineMedium),
+              Text("newuser1823@gmail.com", style: Theme.of(context).textTheme.bodyMedium),
               SizedBox(height: CDimensions.betweenItems),
               Text(
                 CTexts.resetPasswordSubtitle,
@@ -50,10 +42,7 @@ class ResetPassword extends StatelessWidget {
               SizedBox(height: 40),
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () => Get.back(),
-                  child: Text(CTexts.doneText),
-                ),
+                child: ElevatedButton(onPressed: () => Get.back(), child: Text(CTexts.doneText)),
               ),
               SizedBox(height: CDimensions.betweenItems),
               SizedBox(
@@ -62,9 +51,7 @@ class ResetPassword extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     CTexts.resendEmail,
-                    style: TextStyle(
-                      color: isDark ? Colors.white : Colors.grey.shade700,
-                    ),
+                    style: TextStyle(color: isDark ? Colors.white : Colors.grey.shade700),
                   ),
                 ),
               ),

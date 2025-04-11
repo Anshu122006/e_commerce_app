@@ -8,10 +8,7 @@ class CSignupTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 15),
-      child: Text(
-        CTexts.signupHeading,
-        style: Theme.of(context).textTheme.headlineMedium,
-      ),
+      child: Text(CTexts.signupHeading, style: Theme.of(context).textTheme.headlineMedium),
     );
   }
 }

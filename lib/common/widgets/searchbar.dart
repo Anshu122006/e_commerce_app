@@ -36,10 +36,9 @@ class CSearchbar extends StatelessWidget {
             ),
             Text(
               labelText,
-              style: Theme.of(context).textTheme.bodyMedium!.apply(
-                color: borderColor,
-                fontStyle: FontStyle.italic,
-              ),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium!.apply(color: borderColor, fontStyle: FontStyle.italic),
             ),
           ],
         ),

@@ -19,8 +19,7 @@ class CListItem extends StatelessWidget {
               child: CRoundedImage(
                 padding: EdgeInsets.all(2),
                 isCircle: true,
-                backgroundColor:
-                    isDark ? Colors.grey.shade900 : Colors.grey.shade50,
+                backgroundColor: isDark ? Colors.grey.shade900 : Colors.grey.shade50,
                 image: CImages.clothIcon,
                 overlayColor: isDark ? Colors.white : Colors.black,
               ),
@@ -32,9 +31,7 @@ class CListItem extends StatelessWidget {
               padding: const EdgeInsets.all(8),
               child: Text(
                 "Logo",
-                style: TextStyle(
-                  color: isDark ? Colors.white : Colors.grey.shade700,
-                ),
+                style: TextStyle(color: isDark ? Colors.white : Colors.grey.shade700),
                 overflow: TextOverflow.ellipsis,
               ),
             ),

@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               CLoginHeader(),
               CLoginForm(),
-              CTextDivider(text: CTexts.orSignInWith,),
+              CTextDivider(text: CTexts.orSignInWith),
               CLoginFooter(),
             ],
           ),

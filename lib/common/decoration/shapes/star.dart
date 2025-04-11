@@ -35,12 +35,9 @@ class CStar extends StatelessWidget {
       child: LayoutBuilder(
         builder: (context, constraint) {
           final bool scaleDown =
-              radius * 2 > constraint.maxWidth ||
-              radius * 2 > constraint.maxHeight;
+              radius * 2 > constraint.maxWidth || radius * 2 > constraint.maxHeight;
 
-          return scaleDown
-              ? FittedBox(child: star)
-              : UnconstrainedBox(child: star);
+          return scaleDown ? FittedBox(child: star) : UnconstrainedBox(child: star);
         },
       ),
     );

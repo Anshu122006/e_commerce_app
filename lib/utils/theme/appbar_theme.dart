@@ -11,11 +11,7 @@ class CAppbarTheme {
     shadowColor: Colors.grey.shade700,
 
     // centerTitle: true,
-    titleTextStyle: TextStyle(
-      fontSize: 20,
-      fontWeight: FontWeight.w600,
-      color: Colors.white,
-    ),
+    titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.white),
     iconTheme: IconThemeData(color: Colors.white, size: 24),
   );
 
@@ -26,11 +22,7 @@ class CAppbarTheme {
     scrolledUnderElevation: 0,
     shadowColor: Colors.grey.shade700,
     // centerTitle: true,
-    titleTextStyle: TextStyle(
-      fontSize: 20,
-      fontWeight: FontWeight.w600,
-      color: Colors.white,
-    ),
+    titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.white),
     iconTheme: IconThemeData(color: Colors.white, size: 24),
   );
 }

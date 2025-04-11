@@ -25,18 +25,12 @@ class CDeliverToState extends State<CDeliverTo> {
           Row(
             children: [
               Text("Deliver to "),
-              Text(
-                widget.adress ?? "not set",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
+              Text(widget.adress ?? "not set", style: TextStyle(fontWeight: FontWeight.bold)),
             ],
           ),
           IconButton(
             onPressed: () {},
-            icon: Transform.translate(
-              offset: Offset(0, -10),
-              child: Icon(Icons.expand_more),
-            ),
+            icon: Transform.translate(offset: Offset(0, -10), child: Icon(Icons.expand_more)),
           ),
         ],
       ),

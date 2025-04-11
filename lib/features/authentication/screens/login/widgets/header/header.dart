@@ -25,14 +25,8 @@ class CLoginHeader extends StatelessWidget {
                 fit: BoxFit.contain,
               ),
             ),
-            Text(
-              CTexts.loginHeaderTitle,
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            Text(
-              CTexts.loginHeaderSubtitle,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
+            Text(CTexts.loginHeaderTitle, style: Theme.of(context).textTheme.titleMedium),
+            Text(CTexts.loginHeaderSubtitle, style: Theme.of(context).textTheme.bodyMedium),
           ],
         ),
       ),

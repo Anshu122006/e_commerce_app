@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/decoration/edges/bottom_inward_curved.dart';
+import 'package:e_commerce_app/common/decoration/shapes/bottom_inward_curved.dart';
 import 'package:e_commerce_app/common/decoration/shapes/circle.dart';
 import 'package:flutter/material.dart';
 
@@ -10,8 +10,7 @@ class CPrimaryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipPath(
-      clipper: CBottomInwardCurvedEdge(),
+    return CBottomInwardCurved(
       child: Container(
         color: backgroundColor ?? Theme.of(context).primaryColor,
         padding: EdgeInsets.only(bottom: 24),

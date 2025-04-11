@@ -6,7 +6,7 @@ class ProductListController extends GetxController {
 
   List<CProduct> productList = [];
 
-  void addProduct(bool  isFav, int count) {
+  void addProduct(bool isFav, int count) {
     return productList.add(CProduct(isFav.obs, count.obs));
   }
 }

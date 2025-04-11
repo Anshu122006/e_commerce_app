@@ -3,12 +3,7 @@ import 'package:e_commerce_app/common/widgets/texts/brand_name.dart';
 import 'package:flutter/material.dart';
 
 class CProductDesc extends StatelessWidget {
-  const CProductDesc({
-    super.key,
-    required this.desc,
-    required this.brandName,
-    required this.price,
-  });
+  const CProductDesc({super.key, required this.desc, required this.brandName, required this.price});
 
   final String desc;
   final String brandName;
@@ -32,9 +27,7 @@ class CProductDesc extends StatelessWidget {
           // Spacer(flex: 1),
           Text(
             "\$$price",
-            style: Theme.of(
-              context,
-            ).textTheme.headlineLarge!.apply(fontFamily: "Pacifico"),
+            style: Theme.of(context).textTheme.headlineLarge!.apply(fontFamily: "Pacifico"),
           ),
         ],
       ),

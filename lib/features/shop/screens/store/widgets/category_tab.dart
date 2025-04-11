@@ -18,20 +18,11 @@ class CCategoryTab extends StatelessWidget {
         Column(
           children: [
             const SizedBox(height: 30),
-            CBrandShowCase(
-              images: [CImages.shoes, CImages.shoes, CImages.shoes],
-            ),
+            CBrandShowCase(images: [CImages.shoes, CImages.shoes, CImages.shoes]),
             const SizedBox(height: 10),
-            CHeading(
-              title: "You might like",
-              buttonText: "View all",
-              onPressed: () {},
-            ),
+            CHeading(title: "You might like", buttonText: "View all", onPressed: () {}),
             const SizedBox(height: 10),
-            CGridLayout(
-              itemCount: 4,
-              builder: (_, index) => CVerticalImageCard(id: index),
-            ),
+            CGridLayout(itemCount: 4, builder: (_, index) => CVerticalImageCard(id: index)),
           ],
         ),
       ],

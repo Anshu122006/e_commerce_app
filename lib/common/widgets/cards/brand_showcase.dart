@@ -27,12 +27,7 @@ class CBrandShowCase extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CBrandCard(
-              brandName: "Nike",
-              image: CImages.shoeIcon,
-              count: 356,
-              showBorder: false,
-            ),
+            CBrandCard(brandName: "Nike", image: CImages.shoeIcon, count: 356, showBorder: false),
             const SizedBox(height: 10),
             Row(children: images.map(_toProductImageWidget).toList()),
           ],

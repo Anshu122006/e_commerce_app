@@ -23,10 +23,7 @@ class CFormInputField extends StatelessWidget {
       width: double.infinity,
       child: TextFormField(
         cursorColor: Colors.grey.shade700,
-        style: TextStyle(
-          color: isDark ? Colors.grey : Colors.grey.shade800,
-          fontSize: 16,
-        ),
+        style: TextStyle(color: isDark ? Colors.grey : Colors.grey.shade800, fontSize: 16),
         obscureText: obscureText,
         decoration: InputDecoration(
           filled: filled,

@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListItem extends StatelessWidget {
-  const ListItem({
-    super.key,
-    required this.url,
-    required this.name,
-    required this.isActive,
-  });
+  const ListItem({super.key, required this.url, required this.name, required this.isActive});
   final String url;
   final String name;
   final bool isActive;

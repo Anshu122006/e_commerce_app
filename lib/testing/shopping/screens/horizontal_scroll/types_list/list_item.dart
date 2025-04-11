@@ -33,9 +33,7 @@ class ListItem extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
-          isActive
-              ? Container(height: borderWidth * 1.5, color: Colors.red)
-              : Container(height: 0),
+          isActive ? Container(height: borderWidth * 1.5, color: Colors.red) : Container(height: 0),
         ],
       ),
     );

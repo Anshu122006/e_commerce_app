@@ -8,10 +8,6 @@ class HomePageAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CAppBar(
-      showBackArrow: false,
-      title: AppBarTitle(),
-      actions: [CCartButton()],
-    );
+    return CAppBar(showBackArrow: false, title: AppBarTitle(), actions: [CCartButton()]);
   }
 }

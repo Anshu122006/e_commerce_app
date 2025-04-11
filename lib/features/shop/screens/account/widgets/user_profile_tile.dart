@@ -1,6 +1,8 @@
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
+import 'package:e_commerce_app/features/personalisation/screens/user_details/user_details_screen.dart';
 import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CUserProfileTile extends StatelessWidget {
@@ -9,14 +11,15 @@ class CUserProfileTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CRoundedImage(
-        height: 50,
-        width: 50,
-        radius: 50,
-        image: CImages.profileIcon,
+      leading: FittedBox(
+        child: CRoundedImage(
+          isCircle: true,
+          radius: 30,
+          image: CImages.profileIcon,
+        ),
       ),
       title: Text(
-        "Padamon",
+        "Pandamon",
         style: Theme.of(
           context,
         ).textTheme.labelLarge!.apply(color: Colors.white),
@@ -27,7 +30,10 @@ class CUserProfileTile extends StatelessWidget {
           context,
         ).textTheme.labelMedium!.apply(color: Colors.white),
       ),
-      trailing: Icon(Iconsax.edit, color: Colors.white),
+      trailing: IconButton(
+        onPressed: () => Get.to(() => UserDetailsScreen()),
+        icon: Icon(Iconsax.edit, color: Colors.white),
+      ),
     );
   }
 }

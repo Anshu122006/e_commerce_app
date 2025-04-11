@@ -10,10 +10,6 @@ class CFavButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<IconData> icons = [Iconsax.heart, Iconsax.heart5];
 
-    return IconButton(
-      onPressed: () {
-      },
-      icon: Icon(icons[0], color: Colors.red.shade400, size: 32),
-    );
+    return IconButton(onPressed: () {}, icon: Icon(icons[0], color: Colors.red.shade400, size: 32));
   }
 }

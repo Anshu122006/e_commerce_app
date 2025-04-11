@@ -11,7 +11,8 @@ class CRoundedContainer extends StatelessWidget {
     this.showBorder = true,
     this.isCircle = false,
     this.height,
-    this.width, this.padding,
+    this.width,
+    this.padding,
   });
 
   final Color? backgroundColor;

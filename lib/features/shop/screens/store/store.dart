@@ -13,10 +13,7 @@ class StoreScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
-          title: Text(
-            "Store",
-            style: Theme.of(context).textTheme.headlineLarge,
-          ),
+          title: Text("Store", style: Theme.of(context).textTheme.headlineLarge),
           actions: [CCartButton()],
         ),
         body: NestedScrollView(

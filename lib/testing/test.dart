@@ -66,10 +66,7 @@ class _TestState extends State<Test> {
       ),
       Padding(
         padding: const EdgeInsets.all(2),
-        child: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.account_circle_outlined, size: 28),
-        ),
+        child: IconButton(onPressed: () {}, icon: Icon(Icons.account_circle_outlined, size: 28)),
       ),
       SizedBox(width: 10),
     ];

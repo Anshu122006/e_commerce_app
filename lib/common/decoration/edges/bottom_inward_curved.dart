@@ -17,19 +17,9 @@ class CBottomInwardCurvedEdge extends CustomClipper<Path> {
     final controlRight = Offset(size.width, size.height - 20);
 
     path.lineTo(points[0].dx, points[0].dy);
-    path.quadraticBezierTo(
-      controlLeft.dx,
-      controlLeft.dy,
-      points[1].dx,
-      points[1].dy,
-    );
+    path.quadraticBezierTo(controlLeft.dx, controlLeft.dy, points[1].dx, points[1].dy);
     path.lineTo(points[2].dx, points[2].dy);
-    path.quadraticBezierTo(
-      controlRight.dx,
-      controlRight.dy,
-      points[3].dx,
-      points[3].dy,
-    );
+    path.quadraticBezierTo(controlRight.dx, controlRight.dy, points[3].dx, points[3].dy);
     path.lineTo(points[4].dx, points[4].dy);
 
     return path;
