@@ -36,7 +36,7 @@ class CHeading extends StatelessWidget {
                 onPressed: onPressed,
                 child: Text(
                   buttonText!,
-                  style: Theme.of(context).textTheme.bodyMedium,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               )
               : SizedBox(),

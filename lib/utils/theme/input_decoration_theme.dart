@@ -6,22 +6,26 @@ class CInputDecorationTheme {
     errorMaxLines: 3,
     prefixIconColor: Colors.grey.shade700,
     suffixIconColor: Colors.grey.shade700,
-    filled: true,
+    filled: false,
 
     fillColor: Colors.pink.shade50,
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.pink.shade300),
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(color: Colors.grey.shade700),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.pink.shade400),
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(color: Colors.grey.shade700),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.pink.shade500, width: 2),
+      borderRadius: BorderRadius.circular(14),
+      borderSide: BorderSide(color: Colors.grey.shade800, width: 2),
     ),
-    hintStyle: TextStyle(color: Colors.pink.shade500, fontStyle: FontStyle.italic),
+    hintStyle: TextStyle(
+      color: Colors.grey.shade600,
+      fontStyle: FontStyle.italic,
+      fontSize: 22,
+    ),
     labelStyle: TextStyle(
       color: Colors.grey,
       fontWeight: FontWeight.w300,
@@ -29,7 +33,7 @@ class CInputDecorationTheme {
       fontSize: 16,
     ),
     floatingLabelStyle: TextStyle(
-      color: Colors.pink.shade500,
+      color: Colors.grey.shade600,
       fontWeight: FontWeight.w600,
       fontStyle: FontStyle.italic,
       fontSize: 16,
@@ -44,17 +48,21 @@ class CInputDecorationTheme {
     fillColor: Colors.pink.shade50,
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.pink.shade300),
+      borderSide: BorderSide(color: Colors.grey.shade400),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.pink.shade400),
+      borderSide: BorderSide(color: Colors.grey.shade400),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.pink.shade500, width: 2),
+      borderSide: BorderSide(color: Colors.grey.shade500, width: 2),
     ),
-    hintStyle: TextStyle(color: Colors.pink.shade500, fontStyle: FontStyle.italic),
+    hintStyle: TextStyle(
+      color: Colors.grey.shade200,
+      fontStyle: FontStyle.italic,
+      fontSize: 22,
+    ),
     labelStyle: TextStyle(
       color: Colors.grey,
       fontWeight: FontWeight.w300,
@@ -62,7 +70,7 @@ class CInputDecorationTheme {
       fontSize: 16,
     ),
     floatingLabelStyle: TextStyle(
-      color: Colors.pink.shade500,
+      color: Colors.grey.shade200,
       fontWeight: FontWeight.w600,
       fontStyle: FontStyle.italic,
       fontSize: 16,

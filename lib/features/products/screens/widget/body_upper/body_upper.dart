@@ -34,7 +34,6 @@ class CBodyUpper extends StatelessWidget {
           brandName: "Nike",
           image: CImages.shoeIcon,
           showBorder: false,
-          showCount: false,
           scale: 0.6,
         ),
       ],

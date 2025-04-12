@@ -1,6 +1,6 @@
+import 'package:e_commerce_app/common/widgets/count_display.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class CAddToCart extends StatelessWidget {
   const CAddToCart({super.key});
@@ -23,29 +23,7 @@ class CAddToCart extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {},
-                style: IconButton.styleFrom(
-                  backgroundColor: Colors.grey.shade400,
-                  foregroundColor: Colors.black,
-                ),
-                icon: Icon(Iconsax.minus),
-              ),
-              const SizedBox(width: 10),
-              Text("2", style: Theme.of(context).textTheme.headlineSmall),
-              const SizedBox(width: 10),
-              IconButton(
-                onPressed: () {},
-                style: IconButton.styleFrom(
-                  backgroundColor: Colors.black,
-                  foregroundColor: Colors.white,
-                ),
-                icon: Icon(Iconsax.add),
-              ),
-            ],
-          ),
+          CCountDisplay(),
 
           ElevatedButton(
             onPressed: () {},

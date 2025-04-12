@@ -57,6 +57,7 @@ flutter:
     - assets/images/categories/
     - assets/images/promo/
     - assets/images/product/
+    - assets/images/notifications/
     - assets/videos/
     - assets/fonts/
     - assets/icons/

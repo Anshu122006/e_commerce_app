@@ -9,6 +9,8 @@ class CImages {
   static const String promo3 = 'assets/images/promo/dummy_promo_3.png';
   static const String promo4 = 'assets/images/promo/dummy_promo_4.png';
 
+  static const String tickImage = 'assets/images/notifications/tick_image.png';
+
   static const String shoes = 'assets/images/product/shoe.png';
 
   static const String onboardingImage1 = 'assets/images/onboarding_images/onboarding_1.gif';
@@ -17,6 +19,8 @@ class CImages {
 
   static const String googleIcon = 'assets/icons/google_icon.png';
   static const String facebookIcon = 'assets/icons/facebook_icon.png';
+  static const String paytmIcon = 'assets/icons/paytm_icon.png';
+
   static const String clothIcon = 'assets/icons/cloth_icon.png';
   static const String shoeIcon = 'assets/icons/shoe_icon.png';
   static const String bookIcon = 'assets/icons/book_icon.png';
@@ -27,6 +31,7 @@ class CImages {
 
   static const String verifyEmail = 'assets/images/animations/verify_email.gif';
   static const String success = 'assets/images/animations/success.gif';
+  static const String successTick = 'assets/images/animations/success_tick.gif';
 
   static const String passwordSend = 'assets/images/animations/password_sent.gif';
 }

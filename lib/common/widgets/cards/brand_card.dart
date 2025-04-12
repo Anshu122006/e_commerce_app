@@ -9,20 +9,18 @@ class CBrandCard extends StatelessWidget {
     super.key,
     required this.brandName,
     required this.image,
-    this.count = 0,
+    this.count,
     this.scale = 1,
     this.isVerified = true,
     this.showBorder = true,
-    this.showCount = true,
   });
 
   final String brandName;
   final String image;
   final double scale;
-  final int count;
+  final int? count;
   final bool isVerified;
   final bool showBorder;
-  final bool showCount;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +52,7 @@ class CBrandCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CBrandName(brandName: brandName, isVerified: isVerified),
-                  showCount
+                  count != null
                       ? Text(
                         "$count products",
                         style: Theme.of(context).textTheme.bodySmall,

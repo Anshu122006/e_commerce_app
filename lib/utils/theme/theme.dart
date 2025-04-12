@@ -33,7 +33,7 @@ class CAppTheme {
     useMaterial3: true,
     fontFamily: "Robot",
     brightness: Brightness.dark,
-    primaryColor: Colors.pink,
+    primaryColor: Colors.pink.shade300,
     scaffoldBackgroundColor: Colors.grey.shade900,
     appBarTheme: CAppbarTheme.darkAppBarTheme,
     textTheme: CTextTheme.darkTextTheme,

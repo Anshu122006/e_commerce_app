@@ -1,8 +1,12 @@
 // ignore_for_file: unused_import
 
+import 'package:e_commerce_app/common/screens/notification_screen.dart';
 import 'package:e_commerce_app/features/authentication/screens/onboarding/onboarding_screen.dart';
 import 'package:e_commerce_app/features/products/screens/product_detail.dart';
+import 'package:e_commerce_app/features/shop/screens/cart/cart.dart';
+import 'package:e_commerce_app/features/shop/screens/checkout/checkout.dart';
 import 'package:e_commerce_app/global/navigation_menu/navigation_menu.dart';
+import 'package:e_commerce_app/utils/constants/image_strings.dart';
 import 'package:e_commerce_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -34,7 +38,7 @@ class App extends StatelessWidget {
       //     ),
       //   ),
       // ),
-      home: ProductDetailScreen(),
+      home: CheckoutScreen(),
     );
   }
 }

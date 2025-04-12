@@ -1,9 +1,11 @@
 import 'package:e_commerce_app/common/widgets/heading.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/common/widgets/primary_header.dart';
+import 'package:e_commerce_app/features/personalisation/screens/adress/current_adresses.dart';
 import 'package:e_commerce_app/features/shop/screens/account/widgets/option_tile.dart';
 import 'package:e_commerce_app/features/shop/screens/account/widgets/user_profile_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AccountScreen extends StatelessWidget {
@@ -21,7 +23,9 @@ class AccountScreen extends StatelessWidget {
                   CAppBar(
                     title: Text(
                       "Account",
-                      style: Theme.of(context).textTheme.headlineLarge!.apply(color: Colors.white),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.headlineLarge!.apply(color: Colors.white),
                     ),
                   ),
                   CUserProfileTile(),
@@ -43,6 +47,7 @@ class AccountScreen extends StatelessWidget {
                     leadingIcon: Iconsax.safe_home,
                     title: "My Adresses",
                     subtitle: "Set shopping delivery adress",
+                    onPressed: () => Get.to(() => CCurrentAdresses()),
                   ),
                   COptionTile(
                     leadingIcon: Iconsax.shopping_cart,
@@ -106,7 +111,10 @@ class AccountScreen extends StatelessWidget {
 
                   SizedBox(
                     width: double.infinity,
-                    child: OutlinedButton(onPressed: () {}, child: Text("Logout")),
+                    child: OutlinedButton(
+                      onPressed: () {},
+                      child: Text("Logout"),
+                    ),
                   ),
 
                   const SizedBox(height: 30),
