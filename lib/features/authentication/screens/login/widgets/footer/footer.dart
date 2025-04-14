@@ -1,5 +1,5 @@
 import 'package:e_commerce_app/common/widgets/buttons/circular_button.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class CLoginFooter extends StatelessWidget {

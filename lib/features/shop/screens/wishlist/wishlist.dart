@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/widgets/cards/vertical_image_card.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/vertical_image_card.dart';
 import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
@@ -12,7 +12,7 @@ class WishlistScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CAppBar(
-        title: Text("Wishlist", style: Theme.of(context).textTheme.headlineLarge),
+        titleText: "Wishlist",
         actions: [
           IconButton(
             onPressed: () {},

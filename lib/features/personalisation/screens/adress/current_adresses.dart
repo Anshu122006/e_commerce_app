@@ -11,10 +11,7 @@ class CCurrentAdresses extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CAppBar(
-        title: Text(
-          "Adresses",
-          style: Theme.of(context).textTheme.headlineSmall,
-        ),
+        titleText: "Adresses",
         showBackArrow: true,
       ),
       body: SingleChildScrollView(

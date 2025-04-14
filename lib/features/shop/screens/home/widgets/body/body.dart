@@ -1,7 +1,7 @@
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce_app/features/shop/controller/product_list_controller.dart';
-import 'package:e_commerce_app/common/widgets/cards/vertical_image_card.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/vertical_image_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

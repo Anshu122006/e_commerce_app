@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
-import 'package:e_commerce_app/common/widgets/primary_header.dart';
+import 'package:e_commerce_app/common/widgets/preferredsize/primary_header.dart';
 import 'package:e_commerce_app/features/personalisation/screens/adress/current_adresses.dart';
 import 'package:e_commerce_app/features/shop/screens/account/widgets/option_tile.dart';
 import 'package:e_commerce_app/features/shop/screens/account/widgets/user_profile_tile.dart';
@@ -41,6 +41,7 @@ class AccountScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: CHeading(title: "Account Settings"),
                   ),
+                  
                   const SizedBox(height: 10),
 
                   COptionTile(

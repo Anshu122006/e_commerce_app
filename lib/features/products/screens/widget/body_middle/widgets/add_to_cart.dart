@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/widgets/count_display.dart';
+import 'package:e_commerce_app/common/widgets/products/count_display.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 

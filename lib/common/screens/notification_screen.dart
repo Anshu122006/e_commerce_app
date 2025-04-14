@@ -1,5 +1,5 @@
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -13,15 +13,15 @@ class CNotificationScreen extends StatelessWidget {
     required this.onContinue,
     required this.onClose,
     this.onClick,
-    this.isAnimation = false,
-    this.looping = false,
+    // this.isAnimation = false,
+    // this.looping = false,
   });
 
   final String? image, title, subtitle, buttonText;
   final VoidCallback onClose, onContinue;
   final VoidCallback? onClick;
-  final bool isAnimation;
-  final bool looping;
+  // final bool isAnimation;
+  // final bool looping;
 
   @override
   Widget build(BuildContext context) {

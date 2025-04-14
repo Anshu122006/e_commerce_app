@@ -1,7 +1,7 @@
-import 'package:e_commerce_app/common/widgets/choice_chip/color_choice_chip.dart';
-import 'package:e_commerce_app/common/widgets/choice_chip/text_choice_chip.dart';
+import 'package:e_commerce_app/common/widgets/products/choice_chip/color_choice_chip.dart';
+import 'package:e_commerce_app/common/widgets/products/choice_chip/text_choice_chip.dart';
 import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:e_commerce_app/features/products/screens/widget/body_middle/widgets/choice_list.dart';
 import 'package:e_commerce_app/features/products/screens/widget/body_middle/widgets/variations.dart';
 import 'package:e_commerce_app/features/products/screens/widget/body_lower/body_lower.dart';

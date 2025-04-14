@@ -1,24 +1,37 @@
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/font_data.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 
 class CTabbarTheme {
   CTabbarTheme._();
   static TabBarTheme lightTabbarTheme = TabBarTheme(
-    labelColor: Colors.pinkAccent,
-    unselectedLabelColor: Colors.grey.shade600,
-    labelStyle: TextStyle(fontWeight: FontWeight.w600),
-    unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
-    indicator: UnderlineTabIndicator(borderSide: BorderSide(width: 3, color: Colors.pinkAccent)),
+    labelColor: CColors.primaryColor,
+    unselectedLabelColor: CColors.darkGrey,
+    labelStyle: TextStyle(fontWeight: CFontWeights.bold),
+    unselectedLabelStyle: TextStyle(fontWeight: CFontWeights.normal),
+    indicator: UnderlineTabIndicator(
+      borderSide: BorderSide(
+        width: CBorderWidths.thick,
+        color: CColors.secondaryColor,
+      ),
+    ),
     tabAlignment: TabAlignment.start,
-    dividerColor: Colors.grey.shade700,
+    dividerColor: CColors.darkGrey,
   );
 
   static TabBarTheme darkTabbarTheme = TabBarTheme(
-    labelColor: Colors.white,
-    unselectedLabelColor: Colors.grey.shade500,
-    labelStyle: TextStyle(fontWeight: FontWeight.w600),
-    unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
-    indicator: UnderlineTabIndicator(borderSide: BorderSide(width: 3, color: Colors.pinkAccent)),
+    labelColor: CColors.primaryColor,
+    unselectedLabelColor: CColors.lightGrey,
+    labelStyle: TextStyle(fontWeight: CFontWeights.bold),
+    unselectedLabelStyle: TextStyle(fontWeight: CFontWeights.normal),
+    indicator: UnderlineTabIndicator(
+      borderSide: BorderSide(
+        width: CBorderWidths.thick,
+        color: CColors.secondaryColor,
+      ),
+    ),
     tabAlignment: TabAlignment.start,
-    dividerColor: Colors.grey.shade500,
+    dividerColor: CColors.lightGrey,
   );
 }

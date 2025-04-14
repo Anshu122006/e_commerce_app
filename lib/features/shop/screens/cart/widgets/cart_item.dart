@@ -1,10 +1,10 @@
-import 'package:e_commerce_app/common/widgets/count_display.dart';
+import 'package:e_commerce_app/common/widgets/products/count_display.dart';
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
-import 'package:e_commerce_app/common/widgets/label_value.dart';
-import 'package:e_commerce_app/common/widgets/product_price.dart';
+import 'package:e_commerce_app/common/widgets/texts/label_value.dart';
+import 'package:e_commerce_app/common/widgets/products/product_price.dart';
 import 'package:e_commerce_app/common/widgets/texts/brand_name.dart';
-import 'package:e_commerce_app/utils/constants/font_style.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/common/decoration/font_types.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 

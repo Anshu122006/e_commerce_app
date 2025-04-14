@@ -1,7 +1,7 @@
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/products/rating/star_rating_indicator.dart';
 import 'package:e_commerce_app/common/widgets/texts/read_more.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class CUserReview extends StatelessWidget {

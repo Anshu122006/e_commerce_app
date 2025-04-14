@@ -22,7 +22,7 @@ dependencies:
   intl: ^0.20.2
   logger: ^2.5.0
   url_launcher: ^6.3.1
-  flutter_native_splash: ^2.4.5
+  flutter_native_splash: ^2.4.6
   smooth_page_indicator: ^1.2.1
 
   # icons
@@ -58,6 +58,7 @@ flutter:
     - assets/images/promo/
     - assets/images/product/
     - assets/images/notifications/
+    - assets/images/others/
     - assets/videos/
     - assets/fonts/
     - assets/icons/

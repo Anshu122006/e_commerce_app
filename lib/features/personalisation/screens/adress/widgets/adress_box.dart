@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/widgets/rounded_container.dart';
+import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';

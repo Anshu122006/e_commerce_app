@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/common/widgets/input_fields/form_input_field.dart';
-import 'package:e_commerce_app/utils/constants/dimensions.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/common/widgets/text_fields/form_input_field.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class CSignupForm extends StatelessWidget {
@@ -31,17 +31,17 @@ class CSignupForm extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: CDimensions.inboxDistance),
+          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(
             prefixIcon: Icons.account_circle_outlined,
             labelText: CTexts.userName,
             filled: false,
           ),
-          const SizedBox(height: CDimensions.inboxDistance),
+          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(prefixIcon: Icons.email_outlined, labelText: CTexts.email, filled: false),
-          const SizedBox(height: CDimensions.inboxDistance),
+          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(prefixIcon: Icons.phone, labelText: CTexts.phone, filled: false),
-          const SizedBox(height: CDimensions.inboxDistance),
+          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(
             prefixIcon: Icons.password,
             labelText: CTexts.password,

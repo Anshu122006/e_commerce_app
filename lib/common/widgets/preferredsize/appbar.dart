@@ -1,44 +1,44 @@
-import 'package:e_commerce_app/utils/device/device_utility.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CAppBar({
     super.key,
-    this.title,
     this.showBackArrow = false,
     this.leadingIcon,
     this.leadingOnPressed,
     this.actions,
-    this.backgroundCOlor,
-    this.iconColor,
+    this.titleText,
+    this.title,
   });
 
+  final String? titleText;
   final Widget? title;
+
   final bool showBackArrow;
-  final IconData? leadingIcon;
-  final Color? backgroundCOlor;
-  final Color? iconColor;
   final VoidCallback? leadingOnPressed;
+  final IconData? leadingIcon;
+
   final List<Widget>? actions;
 
   @override
   Widget build(BuildContext context) {
-    Color? iconTheme =
-        iconColor ?? (CDeviceHelper.isDarkMode(context) ? Colors.white : Colors.grey.shade800);
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 3),
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       child: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: backgroundCOlor,
-        title: title,
+        title: title ?? Text(titleText ?? ""),
         leading:
             (leadingIcon != null)
-                ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon, color: iconTheme))
+                ? IconButton(
+                  onPressed: leadingOnPressed,
+                  icon: Icon(leadingIcon),
+                )
                 : showBackArrow
                 ? IconButton(
                   onPressed: () => Get.back(),
-                  icon: Icon(Icons.arrow_back, color: iconTheme),
+                  icon: Icon(Icons.arrow_back),
                 )
                 : null,
         actions: actions,
@@ -47,5 +47,5 @@ class CAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(80);
+  Size get preferredSize => Size.fromHeight(CSizes.appBarHeight);
 }

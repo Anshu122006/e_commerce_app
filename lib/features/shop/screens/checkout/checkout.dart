@@ -1,14 +1,14 @@
 import 'package:e_commerce_app/common/screens/notification_screen.dart';
-import 'package:e_commerce_app/common/widgets/coupon_code.dart';
+import 'package:e_commerce_app/common/widgets/products/coupon_code.dart';
 import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
-import 'package:e_commerce_app/common/widgets/rounded_container.dart';
+import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
 import 'package:e_commerce_app/features/personalisation/screens/adress/widgets/adress_box.dart';
 import 'package:e_commerce_app/features/shop/screens/cart/widgets/cart_item.dart';
 import 'package:e_commerce_app/features/shop/screens/checkout/widgets/pricing_details.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -2,7 +2,7 @@ import 'package:e_commerce_app/features/authentication/screens/login/widgets/foo
 import 'package:e_commerce_app/features/authentication/screens/login/widgets/form/form.dart';
 import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
 import 'package:e_commerce_app/features/authentication/screens/login/widgets/header/header.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 

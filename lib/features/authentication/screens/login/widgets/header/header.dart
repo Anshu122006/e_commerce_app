@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/utils/constants/dimensions.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class CLoginHeader extends StatelessWidget {
@@ -15,13 +15,13 @@ class CLoginHeader extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: CDimensions.statusBarPadding),
+            SizedBox(height: CSizes.statusBarPadding),
             Transform.translate(
               offset: Offset(-10, 0),
               child: Image(
                 image: AssetImage(CImages.splashLogo),
-                height: CDimensions.iconImageHeight,
-                width: CDimensions.iconImageWidth,
+                height: CSizes.iconImageHeight,
+                width: CSizes.iconImageWidth,
                 fit: BoxFit.contain,
               ),
             ),

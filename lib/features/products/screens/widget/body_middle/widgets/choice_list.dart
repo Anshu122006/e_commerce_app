@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:flutter/material.dart';
 
 class CChoiceList extends StatelessWidget {

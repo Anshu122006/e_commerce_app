@@ -1,9 +1,9 @@
 import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/features/personalisation/screens/user_details/widgets/options.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -15,10 +15,7 @@ class UserDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: CAppBar(
         showBackArrow: true,
-        title: Text(
-          "Profile",
-          style: Theme.of(context).textTheme.headlineLarge,
-        ),
+        titleText: "Profile"
       ),
       body: Padding(
         padding: const EdgeInsets.all(14),

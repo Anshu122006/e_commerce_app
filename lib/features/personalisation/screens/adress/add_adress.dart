@@ -9,10 +9,7 @@ class CAddAdress extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CAppBar(
-        title: Text(
-          "Add new Adress",
-          style: Theme.of(context).textTheme.headlineSmall,
-        ),
+        titleText: "Add new Adress",
         showBackArrow: true,
       ),
       body: Padding(

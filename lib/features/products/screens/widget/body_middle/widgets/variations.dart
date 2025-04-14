@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/common/widgets/label_value.dart';
-import 'package:e_commerce_app/common/widgets/product_price.dart';
-import 'package:e_commerce_app/common/widgets/rounded_container.dart';
+import 'package:e_commerce_app/common/widgets/texts/label_value.dart';
+import 'package:e_commerce_app/common/widgets/products/product_price.dart';
+import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 

@@ -3,8 +3,8 @@ import 'package:e_commerce_app/features/authentication/screens/onboarding/widget
 import 'package:e_commerce_app/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:e_commerce_app/features/authentication/screens/onboarding/widgets/dot_navigation.dart';
 import 'package:e_commerce_app/features/authentication/screens/onboarding/widgets/skip_button.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

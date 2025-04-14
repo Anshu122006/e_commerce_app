@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/font_data.dart';
 import 'package:flutter/material.dart';
 
 class CTextTheme {
@@ -5,123 +7,133 @@ class CTextTheme {
 
   static TextTheme lightTextTheme = TextTheme(
     headlineLarge: TextStyle().copyWith(
-      fontSize: 30,
-      color: Colors.black,
-      fontWeight: FontWeight.w900,
+      fontSize: CFontSizes.headlineLarge,
+      color: CColors.black,
+      fontWeight: CFontWeights.extraBold,
     ),
     headlineMedium: TextStyle().copyWith(
-      fontSize: 26,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.headlineMedium,
+      color: CColors.black,
+      fontWeight: CFontWeights.extraBold,
     ),
     headlineSmall: TextStyle().copyWith(
-      fontSize: 22,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.headlineSmall,
+      color: CColors.black,
+      fontWeight: CFontWeights.extraBold,
     ),
 
     titleLarge: TextStyle().copyWith(
-      fontSize: 32,
-      color: Colors.black,
-      fontWeight: FontWeight.w900,
+      fontSize: CFontSizes.titleLarge,
+      color: CColors.black,
+      fontWeight: CFontWeights.bold,
     ),
     titleMedium: TextStyle().copyWith(
-      fontSize: 28,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.titleMedium,
+      color: CColors.black,
+      fontWeight: CFontWeights.bold,
     ),
     titleSmall: TextStyle().copyWith(
-      fontSize: 22,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.titelSmall,
+      color: CColors.black,
+      fontWeight: CFontWeights.bold,
     ),
 
     bodyLarge: TextStyle().copyWith(
-      fontSize: 22,
-      color: Colors.black,
-      fontWeight: FontWeight.w300,
+      fontSize: CFontSizes.bodyLarge,
+      color: CColors.black,
+      fontWeight: CFontWeights.normal,
     ),
     bodyMedium: TextStyle().copyWith(
-      fontSize: 16,
-      color: Colors.grey.shade700,
-      fontWeight: FontWeight.w300,
+      fontSize: CFontSizes.bodyMedium,
+      color: CColors.black,
+      fontWeight: CFontWeights.normal,
     ),
     bodySmall: TextStyle().copyWith(
-      fontSize: 14,
-      color: Colors.grey.shade500,
-      fontWeight: FontWeight.w300,
+      fontSize: CFontSizes.bodySmall,
+      color: CColors.black,
+      fontWeight: CFontWeights.normal,
     ),
 
     labelLarge: TextStyle().copyWith(
-      fontSize: 16,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.labelLarge,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
     ),
     labelMedium: TextStyle().copyWith(
-      fontSize: 12,
-      color: Colors.black,
-      fontWeight: FontWeight.w300,
+      fontSize: CFontSizes.labelMedium,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
+    ),
+    labelSmall: TextStyle().copyWith(
+      fontSize: CFontSizes.labelSmall,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
     ),
   );
 
   static TextTheme darkTextTheme = TextTheme(
     headlineLarge: TextStyle().copyWith(
-      fontSize: 32,
-      color: Colors.white,
-      fontWeight: FontWeight.w900,
+      fontSize: CFontSizes.headlineLarge,
+      color: CColors.white,
+      fontWeight: CFontWeights.extraBold,
     ),
     headlineMedium: TextStyle().copyWith(
-      fontSize: 28,
-      color: Colors.white,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.headlineMedium,
+      color: CColors.white,
+      fontWeight: CFontWeights.extraBold,
     ),
     headlineSmall: TextStyle().copyWith(
-      fontSize: 22,
-      color: Colors.white,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.headlineSmall,
+      color: CColors.white,
+      fontWeight: CFontWeights.extraBold,
     ),
 
     titleLarge: TextStyle().copyWith(
-      fontSize: 32,
-      color: Colors.white,
-      fontWeight: FontWeight.w900,
+      fontSize: CFontSizes.titleLarge,
+      color: CColors.white,
+      fontWeight: CFontWeights.bold,
     ),
     titleMedium: TextStyle().copyWith(
-      fontSize: 28,
-      color: Colors.white,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.titleMedium,
+      color: CColors.white,
+      fontWeight: CFontWeights.bold,
     ),
     titleSmall: TextStyle().copyWith(
-      fontSize: 22,
-      color: Colors.white,
-      fontWeight: FontWeight.w600,
+      fontSize: CFontSizes.titelSmall,
+      color: CColors.white,
+      fontWeight: CFontWeights.bold,
     ),
 
     bodyLarge: TextStyle().copyWith(
-      fontSize: 22,
-      color: Colors.black,
-      fontWeight: FontWeight.w100,
+      fontSize: CFontSizes.bodyLarge,
+      color: CColors.white,
+      fontWeight: CFontWeights.normal,
     ),
     bodyMedium: TextStyle().copyWith(
-      fontSize: 16,
-      color: Colors.grey.shade200,
-      fontWeight: FontWeight.w300,
+      fontSize: CFontSizes.bodyMedium,
+      color: CColors.white,
+      fontWeight: CFontWeights.normal,
     ),
     bodySmall: TextStyle().copyWith(
-      fontSize: 14,
-      color: Colors.grey.shade200,
-      fontWeight: FontWeight.w300,
+      fontSize: CFontSizes.bodySmall,
+      color: CColors.white,
+      fontWeight: CFontWeights.normal,
     ),
 
     labelLarge: TextStyle().copyWith(
-      fontSize: 16,
-      color: Colors.white,
-      fontWeight: FontWeight.w400,
+      fontSize: CFontSizes.labelLarge,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
     ),
     labelMedium: TextStyle().copyWith(
-      fontSize: 12,
-      color: Colors.white,
-      fontWeight: FontWeight.w200,
+      fontSize: CFontSizes.labelMedium,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
+    ),
+    labelSmall: TextStyle().copyWith(
+      fontSize: CFontSizes.labelSmall,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
     ),
   );
 }

@@ -1,6 +1,6 @@
-import 'package:e_commerce_app/utils/constants/dimensions.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -33,7 +33,7 @@ class ResetPassword extends StatelessWidget {
               ),
               Text(CTexts.resetPasswordTitle, style: Theme.of(context).textTheme.headlineMedium),
               Text("newuser1823@gmail.com", style: Theme.of(context).textTheme.bodyMedium),
-              SizedBox(height: CDimensions.betweenItems),
+              SizedBox(height: CSizes.betweenItems),
               Text(
                 CTexts.resetPasswordSubtitle,
                 style: Theme.of(context).textTheme.bodySmall,
@@ -44,7 +44,7 @@ class ResetPassword extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(onPressed: () => Get.back(), child: Text(CTexts.doneText)),
               ),
-              SizedBox(height: CDimensions.betweenItems),
+              SizedBox(height: CSizes.betweenItems),
               SizedBox(
                 width: double.infinity,
                 child: TextButton(

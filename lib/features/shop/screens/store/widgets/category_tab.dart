@@ -1,8 +1,8 @@
-import 'package:e_commerce_app/common/widgets/cards/brand_showcase.dart';
-import 'package:e_commerce_app/common/widgets/cards/vertical_image_card.dart';
-import 'package:e_commerce_app/common/widgets/heading.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/brand_showcase.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/vertical_image_card.dart';
+import 'package:e_commerce_app/common/widgets/texts/heading.dart';
 import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class CCategoryTab extends StatelessWidget {
@@ -17,12 +17,21 @@ class CCategoryTab extends StatelessWidget {
       children: [
         Column(
           children: [
-            const SizedBox(height: 30),
-            CBrandShowCase(images: [CImages.shoes, CImages.shoes, CImages.shoes]),
+            // const SizedBox(height: 30),
+            CBrandShowCase(
+              images: [CImages.shoes, CImages.shoes, CImages.shoes],
+            ),
             const SizedBox(height: 10),
-            CHeading(title: "You might like", buttonText: "View all", onPressed: () {}),
+            CHeading(
+              title: "You might like",
+              buttonText: "View all",
+              onPressed: () {},
+            ),
             const SizedBox(height: 10),
-            CGridLayout(itemCount: 4, builder: (_, index) => CVerticalImageCard(id: index)),
+            CGridLayout(
+              itemCount: 4,
+              builder: (_, index) => CVerticalImageCard(id: index),
+            ),
           ],
         ),
       ],

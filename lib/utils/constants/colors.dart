@@ -1,3 +1,0 @@
-class CColors {
-  CColors._();
-}

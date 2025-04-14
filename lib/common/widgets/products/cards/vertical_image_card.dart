@@ -1,10 +1,10 @@
-import 'package:e_commerce_app/common/decoration/styles/shadow.dart';
-import 'package:e_commerce_app/common/widgets/cards/parts/add_button.dart';
-import 'package:e_commerce_app/common/widgets/cards/parts/discount_label.dart';
-import 'package:e_commerce_app/common/widgets/cards/parts/fav_button.dart';
-import 'package:e_commerce_app/common/widgets/cards/parts/product_desc.dart';
-import 'package:e_commerce_app/common/widgets/cards/parts/product_image.dart';
-import 'package:e_commerce_app/utils/constants/image_strings.dart';
+// import 'package:e_commerce_app/common/decoration/styles/shadow.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/parts/add_button.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/parts/discount_label.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/parts/fav_button.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/parts/product_desc.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/parts/product_image.dart';
+import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +29,7 @@ class CVerticalImageCard extends StatelessWidget {
               padding: const EdgeInsets.all(3),
               child: Container(
                 decoration: BoxDecoration(
-                  boxShadow: [isDark ? CShadows.mildShadowDark : CShadows.mildShadowLight],
+                  // boxShadow: [isDark ? CShadows.mildShadowDark : CShadows.mildShadowLight],
                   borderRadius: BorderRadius.circular(20),
                   color: isDark ? Colors.grey.shade700 : Colors.white,
                 ),
@@ -38,7 +38,11 @@ class CVerticalImageCard extends StatelessWidget {
                   children: [
                     CProductImage(image: CImages.shoes, discount: 25),
                     SizedBox(height: 10),
-                    CProductDesc(desc: "Blue Nike Air Shoes.", brandName: "Nike", price: 25.5),
+                    CProductDesc(
+                      desc: "Blue Nike Air Shoes.",
+                      brandName: "Nike",
+                      price: 25.5,
+                    ),
                   ],
                 ),
               ),

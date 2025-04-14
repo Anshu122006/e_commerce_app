@@ -1,5 +1,5 @@
-import 'package:e_commerce_app/common/widgets/cards/parts/discount_label.dart';
-import 'package:e_commerce_app/common/widgets/product_price.dart';
+import 'package:e_commerce_app/common/widgets/products/cards/parts/discount_label.dart';
+import 'package:e_commerce_app/common/widgets/products/product_price.dart';
 import 'package:flutter/material.dart';
 
 class CDiscountPrice extends StatelessWidget {

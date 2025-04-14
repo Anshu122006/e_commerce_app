@@ -11,11 +11,16 @@ class CImages {
 
   static const String tickImage = 'assets/images/notifications/tick_image.png';
 
+  static const String testImage1 = 'assets/images/others/test_image1.jpg';
+
   static const String shoes = 'assets/images/product/shoe.png';
 
-  static const String onboardingImage1 = 'assets/images/onboarding_images/onboarding_1.gif';
-  static const String onboardingImage2 = 'assets/images/onboarding_images/onboarding_2.gif';
-  static const String onboardingImage3 = 'assets/images/onboarding_images/onboarding_3.gif';
+  static const String onboardingImage1 =
+      'assets/images/onboarding_images/onboarding_1.gif';
+  static const String onboardingImage2 =
+      'assets/images/onboarding_images/onboarding_2.gif';
+  static const String onboardingImage3 =
+      'assets/images/onboarding_images/onboarding_3.gif';
 
   static const String googleIcon = 'assets/icons/google_icon.png';
   static const String facebookIcon = 'assets/icons/facebook_icon.png';
@@ -33,5 +38,6 @@ class CImages {
   static const String success = 'assets/images/animations/success.gif';
   static const String successTick = 'assets/images/animations/success_tick.gif';
 
-  static const String passwordSend = 'assets/images/animations/password_sent.gif';
+  static const String passwordSend =
+      'assets/images/animations/password_sent.gif';
 }

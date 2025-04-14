@@ -1,9 +1,9 @@
-import 'package:e_commerce_app/common/widgets/input_fields/form_input_field.dart';
+import 'package:e_commerce_app/common/widgets/text_fields/form_input_field.dart';
 import 'package:e_commerce_app/features/authentication/screens/login/widgets/form/checkbox.dart';
 import 'package:e_commerce_app/features/authentication/screens/signup/signup_screen.dart';
 import 'package:e_commerce_app/global/navigation_menu/navigation_menu.dart';
-import 'package:e_commerce_app/utils/constants/dimensions.dart';
-import 'package:e_commerce_app/utils/constants/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
+import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,16 +18,16 @@ class CLoginForm extends StatelessWidget {
         child: Column(
           children: [
             CFormInputField(labelText: CTexts.email, prefixIcon: Icons.send),
-            const SizedBox(height: CDimensions.inboxDistance),
+            const SizedBox(height: CSizes.inboxDistance),
             CFormInputField(
               labelText: CTexts.forgotPassword,
               prefixIcon: Icons.password,
               suffixIcon: Icons.remove_red_eye_outlined,
               obscureText: true,
             ),
-            const SizedBox(height: CDimensions.inboxDistance),
+            const SizedBox(height: CSizes.inboxDistance),
             CFormCheckBox(),
-            const SizedBox(height: CDimensions.inboxDistance),
+            const SizedBox(height: CSizes.inboxDistance),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -35,7 +35,7 @@ class CLoginForm extends StatelessWidget {
                 child: Text(CTexts.signin),
               ),
             ),
-            const SizedBox(height: CDimensions.betweenItems),
+            const SizedBox(height: CSizes.betweenItems),
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(

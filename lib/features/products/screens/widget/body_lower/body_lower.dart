@@ -11,10 +11,7 @@ class CReviewsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CAppBar(
-        title: Text(
-          "Reviews & Ratings",
-          style: Theme.of(context).textTheme.titleSmall,
-        ),
+        titleText: "Reviews & Ratings",
         showBackArrow: true,
       ),
       body: SingleChildScrollView(

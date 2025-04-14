@@ -1,79 +1,91 @@
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/font_data.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 
 class CInputDecorationTheme {
   CInputDecorationTheme._();
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey.shade700,
-    suffixIconColor: Colors.grey.shade700,
+    prefixIconColor: CColors.darkGrey,
+    suffixIconColor: CColors.darkGrey,
     filled: false,
 
-    fillColor: Colors.pink.shade50,
+    fillColor: CColors.transparent,
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey.shade700),
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(color: CColors.darkGrey),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey.shade700),
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(
+        color: CColors.darkGrey,
+        width: CBorderWidths.thin,
+      ),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: BorderSide(color: Colors.grey.shade800, width: 2),
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(
+        color: CColors.darkGrey,
+        width: CBorderWidths.thick,
+      ),
     ),
     hintStyle: TextStyle(
-      color: Colors.grey.shade600,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
       fontStyle: FontStyle.italic,
-      fontSize: 22,
+      fontSize: CFontSizes.bodySmall,
     ),
     labelStyle: TextStyle(
-      color: Colors.grey,
-      fontWeight: FontWeight.w300,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
       fontStyle: FontStyle.italic,
-      fontSize: 16,
+      fontSize: CFontSizes.bodySmall,
     ),
     floatingLabelStyle: TextStyle(
-      color: Colors.grey.shade600,
-      fontWeight: FontWeight.w600,
+      color: CColors.darkGrey,
+      fontWeight: FontWeight.bold,
       fontStyle: FontStyle.italic,
-      fontSize: 16,
+      fontSize: CFontSizes.labelMedium,
     ),
   );
 
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey.shade700,
-    suffixIconColor: Colors.grey.shade700,
-    filled: true,
-    fillColor: Colors.pink.shade50,
+    prefixIconColor: CColors.darkGrey,
+    suffixIconColor: CColors.darkGrey,
+    filled: false,
+
+    fillColor: CColors.transparent,
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.grey.shade400),
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(color: CColors.darkGrey),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.grey.shade400),
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(color: CColors.white, width: CBorderWidths.thin),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(color: Colors.grey.shade500, width: 2),
+      borderRadius: BorderRadius.circular(18),
+      borderSide: BorderSide(color: CColors.white, width: CBorderWidths.thick),
     ),
     hintStyle: TextStyle(
-      color: Colors.grey.shade200,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
       fontStyle: FontStyle.italic,
-      fontSize: 22,
+      fontSize: CFontSizes.bodySmall,
     ),
     labelStyle: TextStyle(
-      color: Colors.grey,
-      fontWeight: FontWeight.w300,
+      color: CColors.grey,
+      fontWeight: CFontWeights.thin,
       fontStyle: FontStyle.italic,
-      fontSize: 16,
+      fontSize: CFontSizes.bodySmall,
     ),
     floatingLabelStyle: TextStyle(
-      color: Colors.grey.shade200,
-      fontWeight: FontWeight.w600,
+      color: CColors.white,
+      fontWeight: FontWeight.bold,
       fontStyle: FontStyle.italic,
-      fontSize: 16,
+      fontSize: CFontSizes.labelMedium,
     ),
   );
 }
