@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 
 class CProfileOption extends StatelessWidget {
@@ -18,7 +19,7 @@ class CProfileOption extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
+        padding: const EdgeInsets.symmetric(vertical: CPaddings.sm),
         child: SizedBox(
           width: double.infinity,
           child: Row(

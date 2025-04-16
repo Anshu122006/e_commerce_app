@@ -1,5 +1,10 @@
 // ignore_for_file: unused_import
 
+import 'package:e_commerce_app/features/authentication/screens/onboarding/onboarding_screen.dart';
+import 'package:e_commerce_app/features/authentication/screens/signup/signup_screen.dart';
+import 'package:e_commerce_app/features/products/screens/product_detail.dart';
+import 'package:e_commerce_app/features/shop/screens/checkout/checkout.dart';
+import 'package:e_commerce_app/features/shop/screens/home/home.dart';
 import 'package:e_commerce_app/features/shop/screens/store/store.dart';
 import 'package:e_commerce_app/global/navigation_menu/navigation_menu.dart';
 import 'package:e_commerce_app/testing/stack_appbar.dart';
@@ -37,7 +42,7 @@ class App extends StatelessWidget {
       //     ),
       //   ),
       // ),
-      home: CTest3(),
+      home: NavigationMenu(),
     );
   }
 }

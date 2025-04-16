@@ -19,6 +19,7 @@ class CTexts {
   static const String signin = 'Sign-in';
   static const String createAccount = 'Create Account';
   static const String orSignInWith = 'Or Sign in With';
+  static const String orSignUpWith = 'Or Sign up With';
 
   static const String signupHeading = 'Let\'s create your account ';
   static const String firstName = 'First Name';
@@ -36,9 +37,10 @@ class CTexts {
   static const String continueText = 'Continue';
   static const String submitText = 'Submit';
   static const String doneText = 'Done';
+  static const String skipText = 'Skip';
 
-  static const String successTitle = 'Your account successfully created!';
-  static const String successSubtitle =
+  static const String accountCreatedTitle = 'Account Created Successfully!';
+  static const String accountCreatedSubtitle =
       'Welcome to our store, \n Your account has been created successfully \n Have a very nice day, keep shopping!';
 
   static const String forgotPasswordTitle = 'Forgot password';

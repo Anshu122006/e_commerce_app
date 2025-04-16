@@ -1,9 +1,10 @@
-import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
-import 'package:e_commerce_app/common/widgets/texts/heading.dart';
+import 'package:e_commerce_app/common/widgets/accessories/text_divider.dart';
+import 'package:e_commerce_app/common/widgets/accessories/heading.dart';
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/features/personalisation/screens/user_details/widgets/options.dart';
 import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -18,7 +19,7 @@ class UserDetailsScreen extends StatelessWidget {
         titleText: "Profile"
       ),
       body: Padding(
-        padding: const EdgeInsets.all(14),
+        padding: const EdgeInsets.all(CPaddings.mainScreen),
         child: SizedBox(
           width: double.infinity,
           child: Column(
@@ -28,7 +29,7 @@ class UserDetailsScreen extends StatelessWidget {
                 isCircle: true,
                 radius: 40,
               ),
-              const SizedBox(height: 14),
+              const SizedBox(height: CSizes.columnSpacingMid),
               Text(
                 "Change profile picture",
                 style: Theme.of(context).textTheme.labelLarge,
@@ -36,7 +37,7 @@ class UserDetailsScreen extends StatelessWidget {
               CTextDivider(),
 
               CHeading(title: "Profile Information"),
-              const SizedBox(height: 10),
+              const SizedBox(height: CSizes.columnSpacingSmall),
 
               CProfileOption(
                 optionKey: "Name",
@@ -53,7 +54,7 @@ class UserDetailsScreen extends StatelessWidget {
 
               CTextDivider(),
               CHeading(title: "Personal Information"),
-              const SizedBox(height: 10),
+              const SizedBox(height: CSizes.columnSpacingSmall),
 
               CProfileOption(
                 optionKey: "User-ID",

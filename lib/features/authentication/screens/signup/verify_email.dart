@@ -14,10 +14,10 @@ class VerifyEmail extends StatelessWidget {
     return CNotificationScreen(
       image: CImages.verifyEmail,
       title: CTexts.verifyEmailTitle,
-      subtitle: "newuser1823@gmail.com",
+      subtitle: "pandamon1823@gmail.com",
       buttonText: CTexts.resendEmail,
-      onContinue: () => Get.off(SuccessScreen()),
-      onClose: () => Get.offAll(SignupScreen()),
+      onContinue: () => Get.off(() => SuccessScreen()),
+      onClose: () => Get.offAll(() => SignupScreen()),
     );
   }
 }

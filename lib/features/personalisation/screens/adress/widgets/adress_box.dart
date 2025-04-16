@@ -1,4 +1,6 @@
 import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -16,7 +18,7 @@ class CAdressBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CRoundedContainer(
-      padding: EdgeInsets.all(showBorder ? 14 : 0),
+      padding: EdgeInsets.all(showBorder ? CPaddings.mainScreen : 0),
       backgroundColor:
           isSelected
               ? Theme.of(context).primaryColor.withAlpha(120)
@@ -36,11 +38,11 @@ class CAdressBox extends StatelessWidget {
               ),
               Text(
                 "(+91) 779 226 1920",
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
               Text(
                 "Planet-9, Solar System, Milkyway Galaxy near Adromida Galaxy",
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),
@@ -54,8 +56,8 @@ class CAdressBox extends StatelessWidget {
                     Iconsax.tick_circle,
                     color:
                         CDeviceHelper.isDarkMode(context)
-                            ? Colors.white
-                            : Colors.black,
+                            ? CColors.white
+                            : CColors.black,
                   ),
                 ),
               )

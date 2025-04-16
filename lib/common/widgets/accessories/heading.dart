@@ -25,7 +25,7 @@ class CHeading extends StatelessWidget {
         children: [
           Text(
             title,
-            style: Theme.of(context).textTheme.headlineSmall!.apply(
+            style: Theme.of(context).textTheme.titleSmall!.apply(
               color: color,
               fontFamily: family,
               letterSpacingFactor: 1.5,
@@ -36,7 +36,7 @@ class CHeading extends StatelessWidget {
                 onPressed: onPressed,
                 child: Text(
                   buttonText!,
-                  style: Theme.of(context).textTheme.bodySmall,
+                  style: Theme.of(context).textTheme.labelMedium,
                 ),
               )
               : SizedBox(),

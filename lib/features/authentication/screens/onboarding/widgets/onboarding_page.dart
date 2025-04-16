@@ -17,15 +17,15 @@ class COnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(CSizes.defaultPadding),
+      padding: const EdgeInsets.all(CSizes.l),
       child: Column(
         children: [
           Image(
             image: AssetImage(image),
-            height: CDeviceHelper.getScreenHeight(context) * 0.8,
+            height: CDeviceHelper.getScreenHeight(context) * 0.7,
             width: CDeviceHelper.getScreenWidth(context) * 1,
           ),
-          SizedBox(height: CSizes.mediumVericalDistance),
+          SizedBox(height: CSizes.columnSpacingSmall),
           Text(title, style: Theme.of(context).textTheme.headlineMedium),
           Text(subtitle, style: Theme.of(context).textTheme.bodyMedium),
         ],

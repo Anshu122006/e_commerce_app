@@ -1,10 +1,12 @@
 import 'package:e_commerce_app/common/widgets/products/choice_chip/color_choice_chip.dart';
 import 'package:e_commerce_app/common/widgets/products/choice_chip/text_choice_chip.dart';
-import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
-import 'package:e_commerce_app/common/widgets/texts/heading.dart';
+import 'package:e_commerce_app/common/widgets/accessories/text_divider.dart';
+import 'package:e_commerce_app/common/widgets/accessories/heading.dart';
 import 'package:e_commerce_app/features/products/screens/widget/body_middle/widgets/choice_list.dart';
 import 'package:e_commerce_app/features/products/screens/widget/body_middle/widgets/variations.dart';
 import 'package:e_commerce_app/features/products/screens/widget/body_lower/body_lower.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -18,7 +20,7 @@ class CBodyMiddle extends StatelessWidget {
     return Column(
       children: [
         CVariations(),
-        const SizedBox(height: 10),
+        const SizedBox(height: CSizes.columnSpacingMid),
         CChoiceList(
           label: "Colors",
           spacing: 0,
@@ -62,21 +64,21 @@ class CBodyMiddle extends StatelessWidget {
           ],
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: CSizes.columnSpacingMid),
 
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {},
-            child: Text("Checkout", style: TextStyle(color: Colors.white)),
+            child: Text("Checkout", style: TextStyle(color: CColors.white)),
           ),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: CSizes.columnSpacingMid),
 
         CHeading(title: "Description"),
 
-        const SizedBox(height: 10),
+        const SizedBox(height: CSizes.columnSpacingMid),
 
         ReadMoreText(
           "These are very cool nike shoes, you have got to try them out! Don't miss out,, buy one now and save upto 70% and also become the coolest person in the room!   ",
@@ -108,7 +110,7 @@ class CBodyMiddle extends StatelessWidget {
           ],
         ),
 
-        const SizedBox(height: 60),
+        const SizedBox(height: CSizes.columnSpacingLarge * 2),
       ],
     );
   }

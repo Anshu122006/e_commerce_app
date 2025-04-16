@@ -2,8 +2,8 @@ import 'package:e_commerce_app/common/widgets/preferredsize/primary_header.dart'
 import 'package:e_commerce_app/common/widgets/text_fields/searchbar.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/body/body.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/body/carousel/carousel_list.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/head/appbar/appbar.dart';
-import 'package:e_commerce_app/features/shop/screens/home/widgets/head/list/list.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/header/appbar.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/header/list.dart';
 import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
 import 'package:flutter/material.dart';
 
@@ -19,10 +19,10 @@ class HomeScreen extends StatelessWidget {
             CPrimaryHeader(
               child: Column(
                 children: [
-                  HomePageAppBar(),
+                  CHomeAppBar(),
                   CSearchbar(labelText: CTexts.searchText),
                   SizedBox(height: 15),
-                  CHeaderList(),
+                  CHeaderList(height: 120),
                 ],
               ),
             ),

@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 
 class CSearchbar extends StatelessWidget {
@@ -8,10 +10,12 @@ class CSearchbar extends StatelessWidget {
     this.icon = Icons.search,
     this.borderColor,
     this.fillColor,
+    this.height = 50,
   });
 
   final bool filled;
   final String labelText;
+  final double height;
   final IconData icon;
   final Color? borderColor;
   final Color? fillColor;
@@ -19,29 +23,46 @@ class CSearchbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      padding: EdgeInsets.symmetric(horizontal: 14, vertical: 18),
-      decoration: BoxDecoration(
-        border: Border.all(color: borderColor ?? Colors.grey.shade400),
-        borderRadius: BorderRadius.circular(18),
-        color: filled ? fillColor ?? Colors.grey.shade50 : Colors.transparent,
+      width: height * 7,
+      height: height,
+      padding: EdgeInsets.symmetric(
+        horizontal: CPaddings.md,
+        vertical: CPaddings.sm,
       ),
-      child: Align(
-        alignment: Alignment.centerLeft,
-        child: Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(right: 10),
-              child: Icon(icon, color: borderColor),
+      decoration: BoxDecoration(
+        border: Border.all(color: borderColor ?? CColors.grey),
+        borderRadius: BorderRadius.circular(height * 0.5),
+        color: filled ? fillColor ?? CColors.white : CColors.transparent,
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        spacing: CSizes.rowSpacingMid,
+        children: [
+          Expanded(
+            flex: 1,
+            child: Icon(icon, color: CColors.grey, size: height * 0.5),
+          ),
+          Expanded(
+            flex: 9,
+            child: TextField(
+              cursorHeight: height * 0.4,
+              cursorColor: CColors.grey,
+              decoration: InputDecoration(
+                hintText: "Search in store",
+                hintStyle: Theme.of(
+                  context,
+                ).textTheme.labelLarge!.apply(fontStyle: FontStyle.italic),
+                border: InputBorder.none,
+                focusedBorder: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                errorBorder: InputBorder.none,
+                disabledBorder: InputBorder.none,
+                focusedErrorBorder: InputBorder.none,
+                filled: false,
+              ),
             ),
-            Text(
-              labelText,
-              style: Theme.of(
-                context,
-              ).textTheme.bodyMedium!.apply(color: borderColor, fontStyle: FontStyle.italic),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

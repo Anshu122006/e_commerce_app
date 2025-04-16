@@ -1,6 +1,8 @@
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/features/personalisation/screens/adress/add_adress.dart';
 import 'package:e_commerce_app/features/personalisation/screens/adress/widgets/adress_box.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,15 +12,12 @@ class CCurrentAdresses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CAppBar(
-        titleText: "Adresses",
-        showBackArrow: true,
-      ),
+      appBar: CAppBar(titleText: "Adresses", showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(horizontal: CPaddings.sm),
           child: Column(
-            spacing: 10,
+            spacing: CSizes.columnSpacingMid,
             children: [
               CAdressBox(),
               CAdressBox(isSelected: true),
@@ -30,7 +29,7 @@ class CCurrentAdresses extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Get.to(() => CAddAdress()),
         backgroundColor: Theme.of(context).primaryColor,
-        child: Icon(Icons.add, size: 28, color: Colors.white),
+        child: Icon(Icons.add, size: CIconSizes.l, color: CColors.white),
       ),
     );
   }

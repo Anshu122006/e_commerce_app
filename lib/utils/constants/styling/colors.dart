@@ -9,15 +9,20 @@ class CColors {
   static Color lightGrey = Colors.grey.shade100;
   static Color grey = Colors.grey;
   static Color darkGrey = Colors.grey.shade800;
+  static Color blue = Colors.blue.shade700;
 
-  static Color primaryColor = Colors.pink.shade300;
-  static Color secondaryColor = Colors.pink.shade300;
+  static Color light = Colors.white;
+  static Color dark = Colors.grey.shade900;
+
+  static Color primaryColor = Colors.lightGreen.shade300;
+  static Color secondaryColor = Colors.lightGreen.shade300;
 
   static Color buttonBackColor = Colors.pink.shade300;
   static Color buttonFrontColor = Colors.pink.shade300;
   static Color buttonIconColor = Colors.pink.shade300;
 
   static Color checkboxFillColor = Colors.green;
+  static Color favoutiteIconColor = Colors.red.shade300;
 
   static Color iconColorLight = Colors.grey.shade800;
   static Color iconColorDark = Colors.grey.shade200;

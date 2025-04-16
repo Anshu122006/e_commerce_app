@@ -1,6 +1,8 @@
 import 'package:e_commerce_app/common/widgets/texts/label_value.dart';
 import 'package:e_commerce_app/common/widgets/products/product_price.dart';
 import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -13,11 +15,9 @@ class CVariations extends StatelessWidget {
       width: double.infinity,
       showBorder: false,
       backgroundColor:
-          CDeviceHelper.isDarkMode(context)
-              ? Colors.grey.shade700
-              : Colors.grey.shade200,
+          CDeviceHelper.isDarkMode(context) ? CColors.dark : CColors.lightGrey,
       child: Padding(
-        padding: const EdgeInsets.all(14),
+        padding: const EdgeInsets.all(CPaddings.mainScreen),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -27,7 +27,7 @@ class CVariations extends StatelessWidget {
                   "Variation",
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(width: CSizes.rowSpacingLarge * 2),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -52,7 +52,9 @@ class CVariations extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 6),
+
+            const SizedBox(height: CSizes.columnSpacingSmall),
+
             Text(
               "This is the description of the product and it can get upto 4 lines",
               maxLines: 4,

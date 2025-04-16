@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/global/navigation_menu/controller.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +13,7 @@ class NavigationMenu extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: Obx(
         () => NavigationBar(
-          height: 80,
+          height: CSizes.navBarHeight,
           elevation: 0,
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: controller.setCurrentPage,

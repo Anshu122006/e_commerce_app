@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class CDeviceHelper {
@@ -13,7 +14,9 @@ class CDeviceHelper {
   }
 
   static void setStatusbarColor(BuildContext context, Color color) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: color));
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: color),
+    );
   }
 
   static bool isLandscapeOriented(BuildContext context) {
@@ -64,7 +67,9 @@ class CDeviceHelper {
     Future.delayed(Duration(seconds: 0), () => HapticFeedback.vibrate());
   }
 
-  static Future<void> setPreferredOrientations(List<DeviceOrientation> orientations) async {
+  static Future<void> setPreferredOrientations(
+    List<DeviceOrientation> orientations,
+  ) async {
     await SystemChrome.setPreferredOrientations(orientations);
   }
 
@@ -73,17 +78,24 @@ class CDeviceHelper {
   }
 
   static void showStatusBar() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: SystemUiOverlay.values);
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual,
+      overlays: SystemUiOverlay.values,
+    );
   }
 
-  // static double getAppBarHeight() {
-  //   return cToolBarHeight;
-  // }
+  static double getAppBarHeight() {
+    return kToolbarHeight;
+  }
 
-  // static double getKeyboardHeight() {
-  //   final viewInsets = MediaQuery.of(Get.context!).viewInsets;
-  //   return viewInsets.bottom;
-  // }
+  static double getStatusBarHeight(BuildContext context) {
+    return MediaQuery.of(context).padding.top;
+  }
+
+  static double getKeyboardHeight() {
+    final viewInsets = MediaQuery.of(Get.context!).viewInsets;
+    return viewInsets.bottom;
+  }
 
   static Future<bool> hasInternetConnection() async {
     try {

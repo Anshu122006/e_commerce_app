@@ -1,5 +1,7 @@
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -10,30 +12,30 @@ class CListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final bool isDark = CDeviceHelper.isDarkMode(context);
     return Padding(
-      padding: const EdgeInsets.only(right: 8),
+      padding: const EdgeInsets.symmetric(vertical: CPaddings.sm),
       child: Column(
+        spacing: CSizes.columnSpacingSmall,
         children: [
           Expanded(
-            flex: 2,
+            flex: 3,
             child: FittedBox(
               child: CRoundedImage(
-                padding: EdgeInsets.all(2),
+                padding: EdgeInsets.all(CPaddings.xxsm),
                 isCircle: true,
-                backgroundColor: isDark ? Colors.grey.shade900 : Colors.grey.shade50,
+                backgroundColor: isDark ? CColors.dark : CColors.light,
                 image: CImages.clothIcon,
-                overlayColor: isDark ? Colors.white : Colors.black,
+                overlayColor: isDark ? CColors.white : CColors.black,
               ),
             ),
           ),
           Expanded(
             flex: 1,
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Text(
-                "Logo",
-                style: TextStyle(color: isDark ? Colors.white : Colors.grey.shade700),
-                overflow: TextOverflow.ellipsis,
+            child: Text(
+              "Logo",
+              style: Theme.of(context).textTheme.labelLarge!.apply(
+                color: isDark ? CColors.white : CColors.darkGrey,
               ),
+              overflow: TextOverflow.ellipsis,
             ),
           ),
         ],

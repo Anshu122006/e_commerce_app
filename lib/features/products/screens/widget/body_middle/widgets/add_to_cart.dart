@@ -1,4 +1,6 @@
 import 'package:e_commerce_app/common/widgets/products/count_display.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -8,8 +10,11 @@ class CAddToCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
-      padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+      height: 70,
+      padding: EdgeInsets.symmetric(
+        horizontal: CPaddings.md,
+        vertical: CPaddings.sm,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(14),
@@ -17,8 +22,8 @@ class CAddToCart extends StatelessWidget {
         ),
         color:
             CDeviceHelper.isDarkMode(context)
-                ? Colors.grey.shade800
-                : Colors.grey.shade100,
+                ? CColors.darkGrey
+                : CColors.lightGrey,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,10 +33,15 @@ class CAddToCart extends StatelessWidget {
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.black,
-              foregroundColor: Colors.white,
+              backgroundColor: CColors.black,
+              foregroundColor: CColors.white,
             ),
-            child: Text("Add to cart"),
+            child: Text(
+              "Add to cart",
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium!.apply(color: CColors.white),
+            ),
           ),
         ],
       ),

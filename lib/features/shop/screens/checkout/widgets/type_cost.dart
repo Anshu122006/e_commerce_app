@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class CTypeCost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color textColor =
-        CDeviceHelper.isDarkMode(context) ? Colors.white : Colors.grey.shade700;
+        CDeviceHelper.isDarkMode(context) ? CColors.white : CColors.darkGrey;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [

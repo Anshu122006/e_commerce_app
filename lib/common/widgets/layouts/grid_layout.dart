@@ -8,8 +8,8 @@ class CGridLayout extends StatelessWidget {
     this.shrinkWrap = true,
     this.isScrollable = false,
     this.crossAxisCount = 2,
-    this.mainAxisSpacing = 20,
-    this.crossAxisSpacing = 20,
+    this.mainAxisSpacing = 10,
+    this.crossAxisSpacing = 10,
     this.mainAxisExtent = 290,
   });
 

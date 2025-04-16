@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -13,10 +14,10 @@ class CAddAdress extends StatelessWidget {
         showBackArrow: true,
       ),
       body: Padding(
-        padding: EdgeInsets.all(14),
+        padding: EdgeInsets.all(CPaddings.mainScreen),
         child: Form(
           child: Column(
-            spacing: 10,
+            spacing: CSizes.columnSpacingMid,
             children: [
               TextFormField(
                 decoration: const InputDecoration(
@@ -34,7 +35,7 @@ class CAddAdress extends StatelessWidget {
               ),
 
               Row(
-                spacing: 10,
+                spacing: CSizes.rowSpacingMid,
                 children: [
                   Expanded(
                     child: TextFormField(
@@ -58,7 +59,7 @@ class CAddAdress extends StatelessWidget {
               ),
 
               Row(
-                spacing: 10,
+                spacing: CSizes.rowSpacingMid,
                 children: [
                   Expanded(
                     child: TextFormField(

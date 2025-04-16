@@ -10,6 +10,7 @@ class CSignupForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Column(
+        spacing: CSizes.columnSpacingSmall,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -31,17 +32,13 @@ class CSignupForm extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(
             prefixIcon: Icons.account_circle_outlined,
             labelText: CTexts.userName,
             filled: false,
           ),
-          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(prefixIcon: Icons.email_outlined, labelText: CTexts.email, filled: false),
-          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(prefixIcon: Icons.phone, labelText: CTexts.phone, filled: false),
-          const SizedBox(height: CSizes.inboxDistance),
           CFormInputField(
             prefixIcon: Icons.password,
             labelText: CTexts.password,

@@ -1,5 +1,6 @@
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/features/shop/screens/cart/widgets/cart_item.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class CartScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(14),
+          padding: EdgeInsets.all(CPaddings.mainScreen),
           child: Column(
             children: [
               ListView.separated(
@@ -23,11 +24,12 @@ class CartScreen extends StatelessWidget {
                 itemBuilder: (_, index) {
                   return CCartItem();
                 },
-                separatorBuilder: (_, __) => SizedBox(height: 14),
+                separatorBuilder:
+                    (_, __) => SizedBox(height: CSizes.columnSpacingMid),
                 itemCount: 14,
               ),
 
-              const SizedBox(height: 30),
+              const SizedBox(height: CSizes.columnSpacingLarge),
 
               SizedBox(
                 width: double.infinity,

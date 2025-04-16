@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
 import 'package:flutter/material.dart';
 
 class CCouponCode extends StatelessWidget {
@@ -16,12 +17,12 @@ class CCouponCode extends StatelessWidget {
           Flexible(
             child: TextFormField(
               cursorHeight: 24,
-              cursorColor: Colors.grey.shade600,
+              cursorColor: CColors.grey,
               decoration: InputDecoration(
                 hintText: "Got a promo code? Enter here",
                 hintStyle: Theme.of(
                   context,
-                ).textTheme.bodySmall!.apply(fontStyle: FontStyle.italic),
+                ).textTheme.labelLarge!.apply(fontStyle: FontStyle.italic),
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 enabledBorder: InputBorder.none,

@@ -12,39 +12,33 @@ class CLoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 25),
-      child: Form(
-        child: Column(
-          children: [
-            CFormInputField(labelText: CTexts.email, prefixIcon: Icons.send),
-            const SizedBox(height: CSizes.inboxDistance),
-            CFormInputField(
-              labelText: CTexts.forgotPassword,
-              prefixIcon: Icons.password,
-              suffixIcon: Icons.remove_red_eye_outlined,
-              obscureText: true,
+    return Form(
+      child: Column(
+        spacing: CSizes.columnSpacingMid,
+        children: [
+          CFormInputField(labelText: CTexts.email, prefixIcon: Icons.send),
+          CFormInputField(
+            labelText: CTexts.forgotPassword,
+            prefixIcon: Icons.password,
+            suffixIcon: Icons.remove_red_eye_outlined,
+            obscureText: true,
+          ),
+          CFormCheckBox(),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () => Get.to(() => NavigationMenu()),
+              child: Text(CTexts.signin),
             ),
-            const SizedBox(height: CSizes.inboxDistance),
-            CFormCheckBox(),
-            const SizedBox(height: CSizes.inboxDistance),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () => Get.to(() => NavigationMenu()),
-                child: Text(CTexts.signin),
-              ),
+          ),
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(
+              onPressed: () => Get.to(() => SignupScreen()),
+              child: Text(CTexts.createAccount),
             ),
-            const SizedBox(height: CSizes.betweenItems),
-            SizedBox(
-              width: double.infinity,
-              child: OutlinedButton(
-                onPressed: () => Get.to(() => SignupScreen()),
-                child: Text(CTexts.createAccount),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

@@ -5,6 +5,7 @@ import 'package:e_commerce_app/features/authentication/screens/onboarding/widget
 import 'package:e_commerce_app/features/authentication/screens/onboarding/widgets/skip_button.dart';
 import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
 import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -39,9 +40,21 @@ class OnboardingScreen extends StatelessWidget {
               ),
             ],
           ),
-          COnboardingSkipButton(),
-          COnboardingDotNavigator(),
-          COnboardingNextButton(),
+          Positioned(
+            top: CSizes.l,
+            right: CSizes.sm,
+            child: COnboardingSkipButton(),
+          ),
+          Positioned(
+            bottom: CSizes.l,
+            left: CSizes.md,
+            child: COnboardingDotNavigator(),
+          ),
+          Positioned(
+            bottom: CSizes.md,
+            right: CSizes.sm,
+            child: COnboardingNextButton(),
+          ),
         ],
       ),
     );

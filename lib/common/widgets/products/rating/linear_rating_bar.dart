@@ -17,7 +17,7 @@ class CLinearRatingBar extends StatelessWidget {
         Expanded(
           flex: 12,
           child: LinearProgressIndicator(
-            value: value,
+            value: value > 1 ? 1 : value,
             minHeight: 11,
             borderRadius: BorderRadius.circular(6),
             backgroundColor: Colors.grey.shade200,

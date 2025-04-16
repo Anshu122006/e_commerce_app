@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -16,7 +17,7 @@ class CRating extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(Iconsax.star5, color: Colors.yellow, size: 28),
+            Icon(Iconsax.star5, color: Colors.yellow, size: CIconSizes.l),
             SizedBox(width: 6),
             Text.rich(
               TextSpan(

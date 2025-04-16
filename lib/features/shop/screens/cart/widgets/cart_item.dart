@@ -5,6 +5,8 @@ import 'package:e_commerce_app/common/widgets/products/product_price.dart';
 import 'package:e_commerce_app/common/widgets/texts/brand_name.dart';
 import 'package:e_commerce_app/common/decoration/font_types.dart';
 import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -24,16 +26,16 @@ class CCartItem extends StatelessWidget {
             image: CImages.shoes,
             height: 80,
             width: 80,
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(CPaddings.sm),
             showBorder: false,
             backgroundColor:
                 CDeviceHelper.isDarkMode(context)
-                    ? Colors.grey.shade800
-                    : Colors.grey.shade100,
+                    ? CColors.darkGrey
+                    : CColors.lightGrey,
           ),
         ),
 
-        const SizedBox(width: 14),
+        const SizedBox(width: CSizes.rowSpacingMid),
 
         Expanded(
           flex: 4,
@@ -47,13 +49,13 @@ class CCartItem extends StatelessWidget {
               ),
 
               Row(
+                spacing: CSizes.rowSpacingMid,
                 children: [
                   CLabelValue(
                     label: "color",
                     stringValues: ["Blue"],
                     fontType: CFontTypes.bodySmall,
                   ),
-                  const SizedBox(width: 10),
                   CLabelValue(
                     label: "size",
                     stringValues: ["EU 34"],
@@ -74,7 +76,9 @@ class CCartItem extends StatelessWidget {
                         scale: 0.8,
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: CPaddings.md,
+                        ),
                         child: CProductPrice(price: 28),
                       ),
                     ],

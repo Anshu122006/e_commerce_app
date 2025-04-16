@@ -1,5 +1,7 @@
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/utils/constants/data/text_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:e_commerce_app/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -30,8 +32,8 @@ class CNotificationScreen extends StatelessWidget {
     Widget notifyImage =
         image != null
             ? SizedBox(
-              width: CDeviceHelper.getScreenHeight(context) * 0.7,
-              height: CDeviceHelper.getScreenHeight(context) * 0.5,
+              width: CDeviceHelper.getScreenHeight(context) * 0.8,
+              height: CDeviceHelper.getScreenHeight(context) * 0.4,
               child: Image(image: AssetImage(image!), fit: BoxFit.contain),
             )
             : SizedBox();
@@ -60,24 +62,31 @@ class CNotificationScreen extends StatelessWidget {
               Icons.close,
               color:
                   CDeviceHelper.isDarkMode(context)
-                      ? Colors.white
-                      : Colors.black,
+                      ? CColors.white
+                      : CColors.black,
             ),
           ),
         ],
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(14),
+        padding: EdgeInsets.all(CPaddings.mainScreen),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             notifyImage,
+
+            SizedBox(height: CSizes.columnSpacingMid),
+
+            Text(title ?? '', style: Theme.of(context).textTheme.titleMedium),
             Text(
-              title ?? '',
-              style: Theme.of(context).textTheme.headlineMedium,
+              subtitle ?? '',
+              style: Theme.of(context).textTheme.bodySmall,
+              textAlign: TextAlign.center,
             ),
-            Text(subtitle ?? '', style: Theme.of(context).textTheme.bodySmall),
-            SizedBox(height: 40),
+
+            SizedBox(height: CSizes.columnSpacingLarge),
+            SizedBox(height: CSizes.columnSpacingLarge),
+
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -85,7 +94,7 @@ class CNotificationScreen extends StatelessWidget {
                 child: Text(CTexts.continueText),
               ),
             ),
-            const SizedBox(height: 40),
+            SizedBox(height: CSizes.columnSpacingSmall),
             button,
           ],
         ),

@@ -1,7 +1,7 @@
 import 'package:e_commerce_app/common/screens/notification_screen.dart';
-import 'package:e_commerce_app/common/widgets/products/coupon_code.dart';
-import 'package:e_commerce_app/common/widgets/dividers/text_divider.dart';
-import 'package:e_commerce_app/common/widgets/texts/heading.dart';
+import 'package:e_commerce_app/common/widgets/text_fields/coupon_code.dart';
+import 'package:e_commerce_app/common/widgets/accessories/text_divider.dart';
+import 'package:e_commerce_app/common/widgets/accessories/heading.dart';
 import 'package:e_commerce_app/common/widgets/images/rounded_image.dart';
 import 'package:e_commerce_app/common/widgets/preferredsize/appbar.dart';
 import 'package:e_commerce_app/common/widgets/layouts/rounded_container.dart';
@@ -9,6 +9,7 @@ import 'package:e_commerce_app/features/personalisation/screens/adress/widgets/a
 import 'package:e_commerce_app/features/shop/screens/cart/widgets/cart_item.dart';
 import 'package:e_commerce_app/features/shop/screens/checkout/widgets/pricing_details.dart';
 import 'package:e_commerce_app/utils/constants/data/image_strings.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -26,7 +27,7 @@ class CheckoutScreen extends StatelessWidget {
         showBackArrow: true,
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(14),
+        padding: EdgeInsets.all(CPaddings.mainScreen),
         child: Column(
           children: [
             ListView.separated(
@@ -35,18 +36,19 @@ class CheckoutScreen extends StatelessWidget {
               itemBuilder: (_, index) {
                 return CCartItem(showCount: false);
               },
-              separatorBuilder: (_, __) => SizedBox(width: 10),
+              separatorBuilder:
+                  (_, __) => SizedBox(width: CSizes.columnSpacingMid),
               itemCount: 2,
             ),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: CSizes.columnSpacingLarge),
 
             CCouponCode(),
 
-            const SizedBox(height: 20),
+            const SizedBox(height: CSizes.columnSpacingLarge),
 
             CRoundedContainer(
-              padding: EdgeInsets.all(14),
+              padding: EdgeInsets.all(CPaddings.md),
               radius: 18,
               backgroundColor: Colors.transparent,
               child: Column(
@@ -60,7 +62,7 @@ class CheckoutScreen extends StatelessWidget {
                     onPressed: () {},
                   ),
                   Row(
-                    spacing: 20,
+                    spacing: CSizes.rowSpacingLarge,
                     children: [
                       CRoundedImage(
                         image: CImages.paytmIcon,
@@ -72,7 +74,7 @@ class CheckoutScreen extends StatelessWidget {
                         "Paytm",
                         style: Theme.of(
                           context,
-                        ).textTheme.bodyMedium!.apply(fontWeightDelta: 3),
+                        ).textTheme.bodyMedium!.apply(fontWeightDelta: 2),
                       ),
                     ],
                   ),
@@ -89,7 +91,10 @@ class CheckoutScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+        padding: const EdgeInsets.symmetric(
+          horizontal: CPaddings.l,
+          vertical: CPaddings.sm,
+        ),
         child: ElevatedButton(
           onPressed:
               () => Get.to(

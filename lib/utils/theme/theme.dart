@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/constants/styling/colors.dart';
 import 'package:e_commerce_app/utils/theme/appbar_theme.dart';
 import 'package:e_commerce_app/utils/theme/bottom_sheet_theme.dart';
 import 'package:e_commerce_app/utils/theme/checkbox_theme.dart';
@@ -16,8 +17,8 @@ class CAppTheme {
     useMaterial3: true,
     fontFamily: "Robot",
     brightness: Brightness.light,
-    primaryColor: Colors.pink.shade300,
-    scaffoldBackgroundColor: Colors.white,
+    primaryColor: CColors.primaryColor,
+    scaffoldBackgroundColor: CColors.light,
     appBarTheme: CAppbarTheme.lightAppBarTheme,
     textTheme: CTextTheme.lightTextTheme,
     checkboxTheme: CCheckboxTheme.lightCheckboxTheme,
@@ -33,8 +34,8 @@ class CAppTheme {
     useMaterial3: true,
     fontFamily: "Robot",
     brightness: Brightness.dark,
-    primaryColor: Colors.pink.shade300,
-    scaffoldBackgroundColor: Colors.grey.shade900,
+    primaryColor: CColors.primaryColor,
+    scaffoldBackgroundColor: CColors.dark,
     appBarTheme: CAppbarTheme.darkAppBarTheme,
     textTheme: CTextTheme.darkTextTheme,
     checkboxTheme: CCheckboxTheme.darkCheckboxTheme,

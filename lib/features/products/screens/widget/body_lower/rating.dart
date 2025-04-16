@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/common/widgets/products/rating/linear_rating_bar.dart';
 import 'package:e_commerce_app/common/widgets/products/rating/star_rating_indicator.dart';
 import 'package:e_commerce_app/common/widgets/products/rating/rating_text.dart';
+import 'package:e_commerce_app/utils/constants/styling/size_values.dart';
 import 'package:flutter/material.dart';
 
 class CProductRating extends StatelessWidget {
@@ -10,6 +11,7 @@ class CProductRating extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      spacing: CSizes.columnSpacingSmall,
       children: [
         Row(
           children: [
@@ -28,7 +30,6 @@ class CProductRating extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 6),
         CStarRatingIndicator(rating: 4.7, count: "12,230"),
       ],
     );
